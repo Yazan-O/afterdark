@@ -4,16 +4,59 @@
   const load = src => new Promise(res => { const im = new Image(); im.onload = () => res(im); im.onerror = () => res(null); im.src = src; });
 
   document.documentElement.classList.add('js');
-  const rv = [...document.querySelectorAll('section h2, section .sub, section figure, .facts li, .route, .uses p, .cmp, .lens-cap')];
-  rv.forEach(el => el.classList.add('rv'));
-  const io = new IntersectionObserver(es => es.forEach(e => {
-    if (!e.isIntersecting) return;
-    const sib = [...e.target.parentElement.children].filter(x => x.classList.contains('rv'));
-    e.target.style.transitionDelay = `${Math.min(4, sib.indexOf(e.target)) * 80}ms`;
-    e.target.classList.add('in');
-    io.unobserve(e.target);
-  }), { rootMargin: '0px 0px -8% 0px' });
-  rv.forEach(el => io.observe(el));
+  const slides = [...document.querySelectorAll('body > section')];
+  const names = ['Night', 'The camera', 'The catch', 'One word', 'Crossing', 'Paintings', 'Who it is for', 'The data'];
+  const dots = document.querySelector('.deck .dots');
+  slides.forEach((sl, n) => {
+    sl.classList.add('slide');
+    sl.querySelectorAll('h2, .sub, figure, .facts li, .flow, .uses p, .tabs, .big').forEach(el => el.classList.add('rv'));
+    const b = document.createElement('button');
+    b.textContent = names[n] || String(n + 1);
+    b.addEventListener('click', () => go(n));
+    dots.appendChild(b);
+  });
+  let cur = -1, lock = 0;
+  function go(n) {
+    n = Math.max(0, Math.min(slides.length - 1, n));
+    const now = performance.now();
+    if (n === cur || now < lock) return;
+    lock = now + (RM ? 0 : 750);
+    if (cur >= 0) slides[cur].classList.remove('on');
+    cur = n;
+    const sl = slides[n];
+    sl.classList.add('on');
+    sl.scrollTop = 0;
+    sl.querySelectorAll('.rv').forEach((el, m) => { el.classList.remove('in'); el.style.transitionDelay = `${180 + Math.min(6, m) * 80}ms`; requestAnimationFrame(() => el.classList.add('in')); });
+    [...dots.children].forEach((b, m) => b.setAttribute('aria-current', m === n ? 'true' : 'false'));
+    document.querySelector('.dk-prev').disabled = n === 0;
+    document.querySelector('.dk-next').disabled = n === slides.length - 1;
+    dispatchEvent(new Event('resize'));
+  }
+  document.querySelector('.dk-prev').addEventListener('click', () => go(cur - 1));
+  document.querySelector('.dk-next').addEventListener('click', () => go(cur + 1));
+  document.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => go(+b.dataset.go)));
+  document.querySelectorAll('.top nav a').forEach(a => a.addEventListener('click', e => { const t = document.querySelector(a.getAttribute('href')); const n = slides.indexOf(t); if (n >= 0) { e.preventDefault(); go(n); } }));
+  addEventListener('keydown', e => {
+    if (e.target.closest('input')) return;
+    if (e.key === 'ArrowDown' || e.key === 'PageDown') { e.preventDefault(); go(cur + 1); }
+    if (e.key === 'ArrowUp' || e.key === 'PageUp') { e.preventDefault(); go(cur - 1); }
+  });
+  addEventListener('wheel', e => {
+    const sl = slides[cur];
+    if (Math.abs(e.deltaY) < 24) return;
+    const atEnd = sl.scrollTop + sl.clientHeight >= sl.scrollHeight - 2, atTop = sl.scrollTop <= 0;
+    if (e.deltaY > 0 && atEnd) go(cur + 1);
+    if (e.deltaY < 0 && atTop) go(cur - 1);
+  }, { passive: true });
+  let tx = null, ty = 0;
+  addEventListener('touchstart', e => { tx = e.touches[0].clientX; ty = e.touches[0].clientY; }, { passive: true });
+  addEventListener('touchend', e => {
+    if (tx === null || e.target.closest('canvas, input')) { tx = null; return; }
+    const dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty;
+    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) go(cur + (dx < 0 ? 1 : -1));
+    tx = null;
+  }, { passive: true });
+  go(0);
 
   async function lens() {
     const box = document.getElementById('lens');
@@ -133,27 +176,5 @@
     requestAnimationFrame(draw);
   }
 
-  function compare() {
-    const box = document.getElementById('cmp');
-    if (!box) return;
-    const top = box.querySelector('.wipe-top'), handle = box.querySelector('.wipe-handle'), wipe = box.querySelector('.wipe');
-    let x = 0.5;
-    const set = v => { x = Math.max(0, Math.min(1, v)); wipe.setAttribute('aria-valuenow', String(Math.round(x * 100))); top.style.clipPath = `inset(0 0 0 ${(x * 100).toFixed(2)}%)`; handle.style.left = `${(x * 100).toFixed(2)}%`; };
-    set(0.5);
-    let on = false;
-    const at = e => { const r = wipe.getBoundingClientRect(); set((e.clientX - r.left) / r.width); };
-    wipe.addEventListener('pointerdown', e => { on = true; wipe.setPointerCapture(e.pointerId); at(e); });
-    wipe.addEventListener('pointermove', e => { if (on) at(e); });
-    wipe.addEventListener('pointerup', () => { on = false; });
-    wipe.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') set(x - 0.05); if (e.key === 'ArrowRight') set(x + 0.05); });
-    box.querySelectorAll('[data-k]').forEach(b => b.addEventListener('click', () => {
-      const k = b.dataset.k;
-      box.querySelectorAll('[data-k]').forEach(o => o.setAttribute('aria-pressed', String(o === b)));
-      const ims = box.querySelectorAll('img[data-src]');
-      ims.forEach(im => im.classList.add('out'));
-      setTimeout(() => ims.forEach(im => { im.onload = () => im.classList.remove('out'); im.src = im.dataset.src.replace('{k}', k); }), RM ? 0 : 380);
-    }));
-  }
-
-  lens(); cloud(); compare();
+  lens(); cloud();
 })();

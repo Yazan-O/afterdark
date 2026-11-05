@@ -313,7 +313,9 @@ function drawStill(c, img, people, kind, grid) {
 }
 
 const stills = [];
-const EX_KEEP = ['ex02', 'ex01', 'ex04', 'ex05'];
+const EX_KEEP = ['ex02', 'ex01', 'ex04'];
+const EX_NAME = { ex02: 'On the zebra', ex01: 'Beside the tram', ex04: 'Dark junction' };
+const PAINT_NAME = ['Dark SUV', 'White car', 'Parked cars', 'Far end', 'Road curve', 'Tram stop'];
 async function loadExamples() {
   let pack;
   try { const r = await fetch('v6/examples/pack.json'); if (!r.ok) return; pack = await r.json(); } catch (e) { return; }
@@ -330,9 +332,20 @@ async function loadExamples() {
     grid.appendChild(fig);
     Promise.all([loadImage(`v6/examples/${it.id}/cam.webp`), loadImage(`v6/examples/${it.id}/ev.webp`)]).then(([ci, ei]) => {
       const draw = () => { drawStill(cc, ci, it.people.cam, 'cam', pack.mask_grid); drawStill(ec, ei, it.people.ev, 'ev', pack.mask_grid); };
-      stills.push(draw); draw();
+      stills.push(draw); fig._draw = draw; draw();
     });
   }
+  const tabs = document.createElement('div');
+  tabs.className = 'tabs group';
+  grid.before(tabs);
+  const figs = [...grid.children];
+  const show = n => {
+    figs.forEach((f, m) => f.classList.toggle('on', m === n));
+    [...tabs.children].forEach((b, m) => b.setAttribute('aria-pressed', String(m === n)));
+    if (figs[n]._draw) figs[n]._draw();
+  };
+  pack.items.filter(x => EX_KEEP.includes(x.id)).forEach((it, n) => { const b = document.createElement('button'); b.className = 'opt'; b.textContent = EX_NAME[it.id]; b.addEventListener('click', () => show(n)); tabs.appendChild(b); });
+  show(0);
 }
 
 async function loadPaintings() {
@@ -348,6 +361,17 @@ async function loadPaintings() {
     fig.querySelector('figcaption').textContent = it.caption;
     grid.appendChild(fig);
   }
+  const tabs = document.createElement('div');
+  tabs.className = 'tabs group';
+  grid.before(tabs);
+  const figs = [...grid.children];
+  const show = n => {
+    figs.forEach((f, m) => f.classList.toggle('on', m === n));
+    [...tabs.children].forEach((b, m) => b.setAttribute('aria-pressed', String(m === n)));
+    if (figs[n]._draw) figs[n]._draw();
+  };
+  pack.items.forEach((it, n) => { const b = document.createElement('button'); b.className = 'opt'; b.textContent = PAINT_NAME[n] || it.id; b.addEventListener('click', () => show(n)); tabs.appendChild(b); });
+  show(0);
 }
 
 let stillTimer = 0;

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#0E0F11">
 <title>Afterdark</title>
-<meta name="description" content="A brain-inspired event camera and a normal camera drive through Zurich at night. Meta's SAM 3.1 finds the people on both, and Meta's Muse Image paints the street from events alone.">
+<meta name="description" content="A brain-inspired event camera and a normal camera drive through Zurich at night. Meta SAM 3.1 finds the people on both, and Meta Muse Image turns the events back into a picture of the street.">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,12 +26,12 @@
 <section class="hero wrap" id="top">
   <div class="hero-copy">
     <h1>See the street after dark</h1>
-    <p class="lead">At night a normal camera goes dark and smears motion, and a person stepping toward the road is the hardest thing to see. A brain-inspired event camera keeps seeing motion. Meta SAM 3.1 outlines people on it with no retraining, and Meta Muse Image paints the night street from its flickers alone.</p>
-    <a class="go" href="#view">See what we found</a>
+    <p class="lead">At night a normal camera goes dark and smears motion. An event camera, a brain-inspired sensor, keeps seeing anything that moves. Its output looks nothing like a photo, yet Meta SAM 3.1 finds the people in it, and Meta Muse Image turns it back into a picture of the street.</p>
+    <button class="go" data-go="1">Meet the event camera</button>
   </div>
   <figure class="lens" id="lens">
-    <div class="lens-box"><canvas aria-label="A dark night street. A soft light shows the event camera view, where Meta SAM 3.1 outlines a person"></canvas><span class="tag">person, found by Meta SAM 3.1</span></div>
-    <figcaption class="lens-cap">The normal camera, as recorded: Meta SAM 3.1 finds no one. Inside the light, the event camera at the same instant. Move the light across the street</figcaption>
+    <div class="lens-box"><canvas aria-label="A dark night street. A soft light shows the event camera view, where Meta SAM 3.1 outlines a person"></canvas><span class="tag">person crossing, found by Meta SAM 3.1</span></div>
+    <figcaption class="lens-cap">The normal camera, as recorded at night. Inside the light, the event camera at the same instant, and the person Meta SAM 3.1 outlines. Move the light across the street</figcaption>
   </figure>
 </section>
 
@@ -57,25 +57,21 @@
   <div class="wrap">
     <h2>The catch: almost no AI can read flickers</h2>
     <p class="sub">Vision models are trained on pictures. Event research builds its own pipeline, and every step is special-purpose</p>
-    <div class="routes">
-      <div class="route old">
+    <div class="flows">
+      <div class="flow old">
         <h3>The usual route</h3>
-        <ol>
-          <li>Record ordinary video</li>
-          <li>Turn it into fake events with a simulator such as ESIM or v2e</li>
-          <li>Train a network such as E2VID to turn events back into video</li>
-          <li>Train a detector again, on top of that</li>
-        </ol>
-        <p class="src">Rebecq et al., ESIM, CoRL 2018. Hu, Liu and Delbruck, v2e, CVPR Workshops 2021. Rebecq et al., E2VID, CVPR 2019</p>
+        <div class="chain"><span class="node">Ordinary video</span><span class="arr"></span><span class="node">Simulator<em>ESIM, v2e</em></span><span class="arr"></span><span class="node">Fake events</span><span class="arr"></span><span class="node">Train a network<em>E2VID</em></span><span class="arr"></span><span class="node">Train a detector</span><span class="arr"></span><span class="node end">Result</span></div>
       </div>
-      <div class="route new">
+      <div class="flow new">
         <h3>What we found with Meta's models</h3>
-        <ol>
-          <li>Give Meta SAM 3.1 the event frame and the word "person". It outlines the people</li>
-          <li>Give Meta Muse Image the event frame. It paints a readable night street, with no camera picture in the request</li>
-          <li>Meta Muse Spark, or Meta Muse Glimmer on our own NVIDIA H200, checks each painting against both sensors and asks for a repaint where it left something out</li>
-        </ol>
-        <p class="src">No simulator, no retraining, no labels. The same SAM 3.1 call works on the normal camera</p>
+        <div class="fork">
+          <span class="node src">Event camera</span>
+          <div class="branches">
+            <div class="chain"><span class="arr"></span><span class="node meta">Meta SAM 3.1<em>prompt: "person"</em></span><span class="arr"></span><span class="node end">Person outlined</span></div>
+            <div class="chain"><span class="arr"></span><span class="node meta">Meta Muse Image</span><span class="arr"></span><span class="node end">Picture of the street</span><span class="arr back"></span><span class="node meta">Meta Muse Spark or Muse Glimmer<em>checks it against both sensors</em></span></div>
+          </div>
+        </div>
+        <p class="cite">No simulator, no retraining, no labels. Rebecq et al., ESIM, CoRL 2018. Hu, Liu and Delbruck, v2e, CVPRW 2021. Rebecq et al., E2VID, CVPR 2019</p>
       </div>
     </div>
   </div>
@@ -83,7 +79,7 @@
 
 <section class="view wrap" id="view">
   <h2>One word reads both sensors</h2>
-  <p class="sub">Four seconds of the crosswalk drive, processed frame by frame. Meta SAM 3.1 gets each camera frame and each event frame with the same prompt, "person", and outlines the people it finds</p>
+  <p class="sub">Four seconds of the crosswalk drive. Meta SAM 3.1 gets every camera frame and every event frame with one prompt, "person"</p>
   <div class="bar">
     <span class="legend"><span class="li"><span class="sw cam"></span>Found on the camera</span><span class="li"><span class="sw ev"></span>Found on the event camera</span></span>
     <div class="group" aria-label="Layout">
@@ -129,19 +125,7 @@
 <section class="band further" id="further">
   <div class="wrap">
     <h2>Paintings from flickers</h2>
-    <p class="sub">Turning events back into a picture normally needs a network trained on simulated events. Meta Muse Image paints the street from the event frame alone, without seeing the camera frame. These are generated pictures; the real camera frame sits beside each one</p>
-    <div class="cmp" id="cmp">
-      <div class="cmp-bar"><span>Same moment, two ways to turn events into a picture</span><span class="group"><button class="opt" data-k="28" aria-pressed="true">Moment one</button><button class="opt" data-k="68" aria-pressed="false">Moment two</button></span></div>
-      <div class="cmp-row">
-        <figure class="cmp-cam"><img data-src="v6/wow/cmp_{k}_cam.webp" src="v6/wow/cmp_28_cam.webp" alt="Real camera frame, brightened"><figcaption>Real camera, brightened</figcaption></figure>
-        <figure class="cmp-main"><div class="wipe" tabindex="0" role="slider" aria-label="Drag to compare E2VID and Meta Muse Image" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
-          <img data-src="v6/wow/cmp_{k}_e2vid.webp" src="v6/wow/cmp_28_e2vid.webp" alt="E2VID reconstruction from events">
-          <img class="wipe-top" data-src="v6/wow/cmp_{k}_muse.webp" src="v6/wow/cmp_28_muse.webp" alt="Meta Muse Image painting from events">
-          <span class="wipe-handle"></span>
-          <span class="wl">Classic route: E2VID</span><span class="wr">Meta Muse Image</span>
-        </div><figcaption>Drag across. E2VID, a network trained on simulated events, ran over the 1.5 s of events before this moment. Meta Muse Image painted from 10 ms of events and a colour reference from another street</figcaption></figure>
-      </div>
-    </div>
+    <p class="sub">Turning events back into a picture normally needs a network trained on simulated events. Meta Muse Image gets only the event frame and draws the street it shows. These are generated pictures; the real camera frame sits beside each one</p>
     <div class="paintgrid" id="paintgrid"><p class="wait">Pictures are being prepared</p></div>
   </div>
 </section>
@@ -155,17 +139,15 @@
   </div>
 </section>
 
-<section class="band data" id="data">
+<section class="data band" id="data">
   <div class="wrap">
     <h2>The data</h2>
     <p class="sub">DSEC: a car driving through Zurich at night with a normal camera and an event camera mounted side by side. Public, recorded, real</p>
+    <p class="big">Afterdark</p>
+    <p class="fine">Built on Meta SAM 3.1, Meta Muse Image, Meta Muse Spark and Meta Muse Glimmer. Recordings: DSEC dataset (Gehrig et al., 2021), CC BY-SA 4.0. Event camera background: Gallego et al., Event-based Vision: A Survey, 2020</p>
   </div>
 </section>
-
-<footer class="foot wrap">
-  <p class="big">Afterdark</p>
-  <p>Built on Meta SAM 3.1 and Meta Muse Image. Recordings: DSEC dataset (Gehrig et al., 2021), CC BY-SA 4.0. Event camera background: Gallego et al., Event-based Vision: A Survey, 2020</p>
-</footer>
+<nav class="deck" aria-label="Slides"><button class="dk-prev" aria-label="Previous slide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><span class="dots"></span><button class="dk-next" aria-label="Next slide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button></nav>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="app.js"></script>
 <script src="wow.js"></script>
