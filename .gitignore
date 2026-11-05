@@ -11,3 +11,4 @@ dist/
 .claude/
 work/
 *.log
+_runs/
