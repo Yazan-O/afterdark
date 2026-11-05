@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>Afterdark</title>
+<meta name="description" content="A night drive seen only by an event camera. Muse Image paints the street from its flickers. Hold a key to see what it really saw.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="v5.css">
+</head>
+<body>
+<canvas id="gl"></canvas>
+<canvas id="marks"></canvas>
+<div id="tags"></div>
+<p id="reason"></p>
+<p id="caption"></p>
+<div id="keycap" hidden></div>
+<div id="low">
+  <p id="stamp"><span id="sa"></span><span id="layer"></span><span id="sb"></span></p>
+  <div id="words">
+    <button id="inspect" hidden>inspect this moment</button>
+    <button id="paint" hidden>paint this moment</button>
+    <button id="sound">sound</button>
+    <span id="credit">DSEC, CC BY-SA 4.0</span>
+  </div>
+</div>
+<canvas id="strip"></canvas>
+<script src="v5fx.js"></script>
+<script src="v5.js"></script>
+</body>
+</html>

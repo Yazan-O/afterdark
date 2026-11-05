@@ -1,0 +1,16 @@
+Recorded lab setup (sanitized)
+GPU: NVIDIA H200 NVL
+llama.cpp commit: bee23322f1baa3d2dd16b8339bed6aff4a8eb663
+Observed llama-server allocation: 18258 MiB
+Weights source: https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF
+Muse-Glimmer-30B-KQuant-17GB-Q4_K_M.gguf
+Size: 16756683904 bytes
+SHA256: 4cc57c0f51040a226e5a72cc47b7613f7772950e460a665f7083de89f183f60e
+mmproj-Muse-Glimmer-30B-Q4_K_M.gguf
+Size: 1400328928 bytes
+SHA256: f48b452316f9b213758e8659444029b961a24a07f99a1abb2a9f88b06f7c00c6
+Recorded build configuration: CMake, Ninja, GGML_CUDA=ON, CMAKE_CUDA_ARCHITECTURES=90, CMAKE_BUILD_TYPE=Release, LLAMA_CURL=OFF, CUDA 12.8 nvcc; target llama-server.
+Recorded server arguments:
+llama.cpp/build/bin/llama-server -m Muse-Glimmer-30B-KQuant-17GB-Q4_K_M.gguf --mmproj mmproj-Muse-Glimmer-30B-Q4_K_M.gguf -ngl 99 -c 32768 -np 1 --jinja --temp 1.0 --top-p 0.95 --top-k 64 --host 127.0.0.1 --port 8091 --alias Muse-Glimmer-30B
+The original launcher also used lab-only memory and shared-GPU guards and an SSH tunnel. Hostname, username, private paths, GPU UUID and process IDs are omitted. The README gives a direct local-server equivalent without those lab services.
+The original recorded evidence and launch script are read-only provenance sources; the README commands were not executed in this repair.

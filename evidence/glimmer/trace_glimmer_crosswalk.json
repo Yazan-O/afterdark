@@ -1,0 +1,1996 @@
+{
+  "model": "Muse-Glimmer-30B",
+  "served_on": "lab NVIDIA H200 NVL, llama.cpp commit bee23322, weights sha256 prefix 4cc57c0f",
+  "started": "2026-11-04T08:06:51+00:00",
+  "moment": "crosswalk",
+  "steps": [
+    {
+      "i": 0,
+      "tool": "compare",
+      "args": {
+        "k": 68,
+        "concept": "person"
+      },
+      "reason": "Check painting vs camera for person at viewer-held moment k=68",
+      "result": {
+        "k": 68,
+        "t_s": 6.8,
+        "concept": "person",
+        "window_ms": 100,
+        "in_both": [
+          {
+            "painted": {
+              "box": [
+                75,
+                200,
+                160,
+                347
+              ],
+              "score": 0.949,
+              "support": {
+                "events": 140817,
+                "per_pixel": 11.27,
+                "vs_median": 21.62,
+                "backing": 208.4,
+                "backed": true
+              }
+            },
+            "camera": {
+              "box": [
+                70,
+                197,
+                154,
+                347
+              ],
+              "score": 0.938,
+              "support": {
+                "events": 133319,
+                "per_pixel": 10.58,
+                "vs_median": 20.3,
+                "backing": 202.1,
+                "backed": true
+              }
+            },
+            "overlap": 0.861
+          }
+        ],
+        "painted_no_camera": [],
+        "camera_no_painted": [
+          {
+            "box": [
+              435,
+              209,
+              449,
+              243
+            ],
+            "score": 0.86,
+            "support": {
+              "events": 3833,
+              "per_pixel": 8.05,
+              "vs_median": 15.45,
+              "backing": 175.9,
+              "backed": true
+            }
+          }
+        ],
+        "counts": {
+          "painted": 1,
+          "camera": 2,
+          "in_both": 1,
+          "painted_no_camera": 0,
+          "camera_no_painted": 1,
+          "left_out_with_events": 1,
+          "invented_no_events": 0
+        }
+      },
+      "seconds": 21.2,
+      "model_seconds": 15.3
+    },
+    {
+      "i": 1,
+      "tool": "compare",
+      "args": {
+        "k": 68,
+        "concept": "car"
+      },
+      "reason": "Check painting vs camera for car at viewer-held moment k=68",
+      "result": {
+        "k": 68,
+        "t_s": 6.8,
+        "concept": "car",
+        "window_ms": 100,
+        "in_both": [
+          {
+            "painted": {
+              "box": [
+                344,
+                214,
+                362,
+                226
+              ],
+              "score": 0.848,
+              "support": {
+                "events": 261,
+                "per_pixel": 1.21,
+                "vs_median": 2.31,
+                "backing": 83.0,
+                "backed": true
+              }
+            },
+            "camera": {
+              "box": [
+                345,
+                209,
+                370,
+                232
+              ],
+              "score": 0.524,
+              "support": {
+                "events": 957,
+                "per_pixel": 1.66,
+                "vs_median": 3.19,
+                "backing": 74.8,
+                "backed": true
+              }
+            },
+            "overlap": 0.348
+          }
+        ],
+        "painted_no_camera": [
+          {
+            "box": [
+              312,
+              211,
+              318,
+              217
+            ],
+            "score": 0.605,
+            "support": {
+              "events": 198,
+              "per_pixel": 5.5,
+              "vs_median": 10.55,
+              "backing": 209.0,
+              "backed": true
+            }
+          },
+          {
+            "box": [
+              318,
+              211,
+              328,
+              219
+            ],
+            "score": 0.597,
+            "support": {
+              "events": 1664,
+              "per_pixel": 20.79,
+              "vs_median": 39.89,
+              "backing": 244.4,
+              "backed": true
+            }
+          },
+          {
+            "box": [
+              331,
+              213,
+              345,
+              223
+            ],
+            "score": 0.801,
+            "support": {
+              "events": 530,
+              "per_pixel": 3.78,
+              "vs_median": 7.26,
+              "backing": 154.5,
+              "backed": true
+            }
+          }
+        ],
+        "camera_no_painted": [
+          {
+            "box": [
+              126,
+              224,
+              166,
+              249
+            ],
+            "score": 0.852,
+            "support": {
+              "events": 64375,
+              "per_pixel": 64.38,
+              "vs_median": 123.49,
+              "backing": 255.0,
+              "backed": true
+            }
+          },
+          {
+            "box": [
+              306,
+              214,
+              330,
+              235
+            ],
+            "score": 0.824,
+            "support": {
+              "events": 716,
+              "per_pixel": 1.42,
+              "vs_median": 2.73,
+              "backing": 86.7,
+              "backed": true
+            }
+          }
+        ],
+        "counts": {
+          "painted": 4,
+          "camera": 3,
+          "in_both": 1,
+          "painted_no_camera": 3,
+          "camera_no_painted": 2,
+          "left_out_with_events": 2,
+          "invented_no_events": 0
+        }
+      },
+      "seconds": 7.0,
+      "model_seconds": 3.8
+    },
+    {
+      "i": 2,
+      "tool": "compare",
+      "args": {
+        "k": 68,
+        "concept": "tram"
+      },
+      "reason": "Check painting vs camera for tram at viewer-held moment k=68",
+      "result": {
+        "k": 68,
+        "t_s": 6.8,
+        "concept": "tram",
+        "window_ms": 100,
+        "in_both": [],
+        "painted_no_camera": [],
+        "camera_no_painted": [
+          {
+            "box": [
+              185,
+              174,
+              297,
+              247
+            ],
+            "score": 0.863,
+            "support": {
+              "events": 43345,
+              "per_pixel": 5.3,
+              "vs_median": 10.17,
+              "backing": 142.8,
+              "backed": true
+            }
+          }
+        ],
+        "counts": {
+          "painted": 0,
+          "camera": 1,
+          "in_both": 0,
+          "painted_no_camera": 0,
+          "camera_no_painted": 1,
+          "left_out_with_events": 1,
+          "invented_no_events": 0
+        }
+      },
+      "seconds": 8.2,
+      "model_seconds": 4.1
+    },
+    {
+      "i": 3,
+      "tool": "compare",
+      "args": {
+        "k": 68,
+        "concept": "cyclist"
+      },
+      "reason": "Check painting vs camera for cyclist at viewer-held moment k=68",
+      "result": {
+        "k": 68,
+        "t_s": 6.8,
+        "concept": "cyclist",
+        "window_ms": 100,
+        "in_both": [],
+        "painted_no_camera": [],
+        "camera_no_painted": [],
+        "counts": {
+          "painted": 0,
+          "camera": 0,
+          "in_both": 0,
+          "painted_no_camera": 0,
+          "camera_no_painted": 0,
+          "left_out_with_events": 0,
+          "invented_no_events": 0
+        }
+      },
+      "seconds": 8.7,
+      "model_seconds": 5.4
+    },
+    {
+      "i": 4,
+      "tool": "look",
+      "args": {
+        "k": 68,
+        "view": "events",
+        "window_ms": 800,
+        "x": 241,
+        "y": 210,
+        "r": 68
+      },
+      "reason": "Verify tram omission has event support and see its shape before repair",
+      "result": {
+        "k": 68,
+        "t_s": 6.8,
+        "x": 241,
+        "y": 210,
+        "r": 68,
+        "view": "events",
+        "window_ms": 800,
+        "events": 484288,
+        "per_pixel": 26.18,
+        "vs_median": 5.44,
+        "left_out_here": [
+          {
+            "who": "car",
+            "box": [
+              306,
+              214,
+              330,
+              235
+            ],
+            "events": 6743,
+            "vs_median": 2.78,
+            "held": true
+          },
+          {
+            "who": "tram",
+            "box": [
+              185,
+              174,
+              297,
+              247
+            ],
+            "events": 350583,
+            "vs_median": 8.91,
+            "held": true
+          }
+        ]
+      },
+      "seconds": 10.6,
+      "model_seconds": 10.3
+    },
+    {
+      "i": 5,
+      "tool": "look",
+      "args": {
+        "k": 68,
+        "view": "camera",
+        "x": 241,
+        "y": 210,
+        "r": 68
+      },
+      "reason": "Read tram orientation from camera to write repair note",
+      "result": {
+        "k": 68,
+        "t_s": 6.8,
+        "x": 241,
+        "y": 210,
+        "r": 68,
+        "view": "camera",
+        "window_ms": 100,
+        "events": 53267,
+        "per_pixel": 2.88,
+        "vs_median": 5.52,
+        "camera_raw_mean": 46.3
+      },
+      "seconds": 5.3,
+      "model_seconds": 5.2
+    },
+    {
+      "i": 6,
+      "tool": "repaint",
+      "args": {
+        "k": 68,
+        "note": "a tram on the left side of the frame, its front toward the viewer",
+        "concept": "tram",
+        "evidence_window_ms": 800
+      },
+      "reason": "Repair largest omission at viewer-held moment, tram confirmed by events and camera",
+      "result": {
+        "k": 68,
+        "t_s": 6.8,
+        "note": "a tram on the left side of the frame, its front toward the viewer",
+        "version": "r1",
+        "kept_painting": true,
+        "paint_seconds": 17.3,
+        "aimed_at": {
+          "who": "tram",
+          "box": [
+            185,
+            174,
+            297,
+            247
+          ]
+        },
+        "evidence_window_ms": 800,
+        "changes": {
+          "person": {
+            "before": {
+              "painted": 1,
+              "camera": 2,
+              "in_both": 1,
+              "painted_no_camera": 0,
+              "camera_no_painted": 1,
+              "left_out_with_events": 1,
+              "invented_no_events": 0
+            },
+            "after": {
+              "painted": 1,
+              "camera": 2,
+              "in_both": 1,
+              "painted_no_camera": 0,
+              "camera_no_painted": 1,
+              "left_out_with_events": 1,
+              "invented_no_events": 0
+            },
+            "restored": [],
+            "restored_with_events": 0,
+            "left_out_change": 0,
+            "invented_change": 0,
+            "helped": false
+          },
+          "car": {
+            "before": {
+              "painted": 4,
+              "camera": 3,
+              "in_both": 1,
+              "painted_no_camera": 3,
+              "camera_no_painted": 2,
+              "left_out_with_events": 2,
+              "invented_no_events": 0
+            },
+            "after": {
+              "painted": 3,
+              "camera": 3,
+              "in_both": 1,
+              "painted_no_camera": 2,
+              "camera_no_painted": 2,
+              "left_out_with_events": 2,
+              "invented_no_events": 0
+            },
+            "restored": [],
+            "restored_with_events": 0,
+            "left_out_change": 0,
+            "invented_change": -1,
+            "helped": false
+          },
+          "tram": {
+            "before": {
+              "painted": 0,
+              "camera": 1,
+              "in_both": 0,
+              "painted_no_camera": 0,
+              "camera_no_painted": 1,
+              "left_out_with_events": 1,
+              "invented_no_events": 0
+            },
+            "after": {
+              "painted": 1,
+              "camera": 1,
+              "in_both": 1,
+              "painted_no_camera": 0,
+              "camera_no_painted": 0,
+              "left_out_with_events": 0,
+              "invented_no_events": 0
+            },
+            "restored": [
+              [
+                185,
+                174,
+                297,
+                247
+              ]
+            ],
+            "restored_with_events": 1,
+            "left_out_change": -1,
+            "invented_change": 0,
+            "helped": true
+          },
+          "cyclist": {
+            "before": {
+              "painted": 0,
+              "camera": 0,
+              "in_both": 0,
+              "painted_no_camera": 0,
+              "camera_no_painted": 0,
+              "left_out_with_events": 0,
+              "invented_no_events": 0
+            },
+            "after": {
+              "painted": 0,
+              "camera": 0,
+              "in_both": 0,
+              "painted_no_camera": 0,
+              "camera_no_painted": 0,
+              "left_out_with_events": 0,
+              "invented_no_events": 0
+            },
+            "restored": [],
+            "restored_with_events": 0,
+            "left_out_change": 0,
+            "invented_change": 0,
+            "helped": false
+          }
+        },
+        "helped": true,
+        "restored": 1,
+        "restored_with_events": 1,
+        "image": "repaint/0068.glimmer_r1.webp"
+      },
+      "seconds": 30.9,
+      "model_seconds": 5.9
+    },
+    {
+      "i": 7,
+      "tool": "compare",
+      "args": {
+        "k": 11,
+        "concept": "person"
+      },
+      "reason": "Check painting against camera for person at k=11 to cover whole drive",
+      "result": {
+        "k": 11,
+        "t_s": 1.1,
+        "concept": "person",
+        "window_ms": 100,
+        "in_both": [],
+        "painted_no_camera": [
+          {
+            "box": [
+              125,
+              208,
+              159,
+              302
+            ],
+            "score": 0.887,
+            "support": {
+              "events": 14807,
+              "per_pixel": 4.63,
+              "vs_median": 3.49,
+              "backing": 196.3,
+              "backed": true
+            }
+          }
+        ],
+        "camera_no_painted": [
+          {
+            "box": [
+              462,
+              203,
+              472,
+              238
+            ],
+            "score": 0.805,
+            "support": {
+              "events": 4337,
+              "per_pixel": 12.39,
+              "vs_median": 9.34,
+              "backing": 234.7,
+              "backed": true
+            }
+          },
+          {
+            "box": [
+              437,
+              203,
+              444,
+              230
+            ],
+            "score": 0.531,
+            "support": {
+              "events": 633,
+              "per_pixel": 3.35,
+              "vs_median": 2.52,
+              "backing": 202.6,
+              "backed": true
+            }
+          },
+          {
+            "box": [
+              415,
+              207,
+              427,
+              234
+            ],
+            "score": 0.777,
+            "support": {
+              "events": 1155,
+              "per_pixel": 3.56,
+              "vs_median": 2.69,
+              "backing": 163.4,
+              "backed": true
+            }
+          }
+        ],
+        "counts": {
+          "painted": 1,
+          "camera": 3,
+          "in_both": 0,
+          "painted_no_camera": 1,
+          "camera_no_painted": 3,
+          "left_out_with_events": 3,
+          "invented_no_events": 0
+        }
+      },
+      "seconds": 11.1,
+      "model_seconds": 7.8
+    },
+    {
+      "i": 8,
+      "tool": "compare",
+      "args": {
+        "k": 34,
+        "concept": "person"
+      },
+      "reason": "Check painting against camera for person at k=34 to cover whole drive",
+      "result": {
+        "k": 34,
+        "t_s": 3.4,
+        "concept": "person",
+        "window_ms": 100,
+        "in_both": [
+          {
+            "painted": {
+              "box": [
+                536,
+                200,
+                550,
+                254
+              ],
+              "score": 0.855,
+              "support": {
+                "events": 6989,
+                "per_pixel": 9.24,
+                "vs_median": 8.4,
+                "backing": 237.0,
+                "backed": true
+              }
+            },
+            "camera": {
+              "box": [
+                534,
+                194,
+                552,
+                251
+              ],
+              "score": 0.887,
+              "support": {
+                "events": 9877,
+                "per_pixel": 9.63,
+                "vs_median": 8.75,
+                "backing": 232.8,
+                "backed": true
+              }
+            },
+            "overlap": 0.669
+          }
+        ],
+        "painted_no_camera": [],
+        "camera_no_painted": [
+          {
+            "box": [
+              477,
+              196,
+              504,
+              272
+            ],
+            "score": 0.922,
+            "support": {
+              "events": 12979,
+              "per_pixel": 6.32,
+              "vs_median": 5.75,
+              "backing": 178.8,
+              "backed": true
+            }
+          },
+          {
+            "box": [
+              425,
+              205,
+              433,
+              231
+            ],
+            "score": 0.723,
+            "support": {
+              "events": 1742,
+              "per_pixel": 8.37,
+              "vs_median": 7.61,
+              "backing": 175.5,
+              "backed": true
+            }
+          },
+          {
+            "box": [
+              165,
+              195,
+              189,
+              293
+            ],
+            "score": 0.855,
+            "support": {
+              "events": 9460,
+              "per_pixel": 4.02,
+              "vs_median": 3.66,
+              "backing": 195.1,
+              "backed": true
+            }
+          },
+          {
+            "box": [
+              438,
+              200,
+              452,
+              235
+            ],
+            "score": 0.84,
+            "support": {
+              "events": 2249,
+              "per_pixel": 4.59,
+              "vs_median": 4.17,
+              "backing": 200.2,
+              "backed": true
+            }
+          }
+        ],
+        "counts": {
+          "painted": 1,
+          "camera": 5,
+          "in_both": 1,
+          "painted_no_camera": 0,
+          "camera_no_painted": 4,
+          "left_out_with_events": 4,
+          "invented_no_events": 0
+        }
+      },
+      "seconds": 7.9,
+      "model_seconds": 4.5
+    },
+    {
+      "i": 9,
+      "tool": "compare",
+      "args": {
+        "k": 56,
+        "concept": "person"
+      },
+      "reason": "Check painting against camera for person at k=56 to cover whole drive",
+      "result": {
+        "k": 56,
+        "t_s": 5.6,
+        "concept": "person",
+        "window_ms": 100,
+        "in_both": [
+          {
+            "painted": {
+              "box": [
+                0,
+                177,
+                52,
+                375
+              ],
+              "score": 0.934,
+              "support": {
+                "events": 27747,
+                "per_pixel": 2.69,
+                "vs_median": 5.92,
+                "backing": 139.2,
+                "backed": true
+              }
+            },
+            "camera": {
+              "box": [
+                0,
+                182,
+                42,
+                379
+              ],
+              "score": 0.91,
+              "support": {
+                "events": 22209,
+                "per_pixel": 2.68,
+                "vs_median": 5.9,
+                "backing": 136.6,
+                "backed": true
+              }
+            },
+            "overlap": 0.775
+          },
+          {
+            "painted": {
+              "box": [
+                269,
+                191,
+                304,
+                313
+              ],
+              "score": 0.945,
+              "support": {
+                "events": 25942,
+                "per_pixel": 6.08,
+                "vs_median": 13.35,
+                "backing": 198.5,
+                "backed": true
+              }
+            },
+            "camera": {
+              "box": [
+                258,
+                194,
+                294,
+                314
+              ],
+              "score": 0.91,
+              "support": {
+                "events": 30213,
+                "per_pixel": 6.99,
+                "vs_median": 15.37,
+                "backing": 216.0,
+                "backed": true
+              }
+            },
+            "overlap": 0.53
+          },
+          {
+            "painted": {
+              "box": [
+                433,
+                200,
+                441,
+                225
+              ],
+              "score": 0.714,
+              "support": {
+                "events": 5298,
+                "per_pixel": 26.49,
+                "vs_median": 58.2,
+                "backing": 222.7,
+                "backed": true
+              }
+            },
+            "camera": {
+              "box": [
+                428,
+                204,
+                438,
+                233
+              ],
+              "score": 0.695,
+              "support": {
+                "events": 4694,
+                "per_pixel": 16.19,
+                "vs_median": 35.57,
+                "backing": 188.6,
+                "backed": true
+              }
+            },
+            "overlap": 0.273
+          }
+        ],
+        "painted_no_camera": [],
+        "camera_no_painted": [
+          {
+            "box": [
+              619,
+              187,
+              640,
+              269
+            ],
+            "score": 0.899,
+            "support": {
+              "events": 11270,
+              "per_pixel": 6.54,
+              "vs_median": 14.38,
+              "backing": 213.5,
+              "backed": true
+            }
+          },
+          {
+            "box": [
+              440,
+              203,
+              452,
+              237
+            ],
+            "score": 0.808,
+            "support": {
+              "events": 2541,
+              "per_pixel": 6.23,
+              "vs_median": 13.69,
+              "backing": 172.4,
+              "backed": true
+            }
+          }
+        ],
+        "counts": {
+          "painted": 3,
+          "camera": 5,
+          "in_both": 3,
+          "painted_no_camera": 0,
+          "camera_no_painted": 2,
+          "left_out_with_events": 2,
+          "invented_no_events": 0
+        }
+      },
+      "seconds": 9.7,
+      "model_seconds": 4.9
+    },
+    {
+      "i": 10,
+      "tool": "compare",
+      "args": {
+        "k": 79,
+        "concept": "person"
+      },
+      "reason": "Check painting against camera for person at k=79 to cover whole drive",
+      "result": {
+        "k": 79,
+        "t_s": 7.9,
+        "concept": "person",
+        "window_ms": 100,
+        "in_both": [
+          {
+            "painted": {
+              "box": [
+                441,
+                208,
+                460,
+                266
+              ],
+              "score": 0.93,
+              "support": {
+                "events": 15238,
+                "per_pixel": 13.83,
+                "vs_median": 18.06,
+                "backing": 223.7,
+                "backed": true
+              }
+            },
+            "camera": {
+              "box": [
+                443,
+                209,
+                457,
+                242
+              ],
+              "score": 0.801,
+              "support": {
+                "events": 6820,
+                "per_pixel": 14.76,
+                "vs_median": 19.28,
+                "backing": 222.9,
+                "backed": true
+              }
+            },
+            "overlap": 0.419
+          }
+        ],
+        "painted_no_camera": [
+          {
+            "box": [
+              117,
+              201,
+              131,
+              218
+            ],
+            "score": 0.543,
+            "support": {
+              "events": 2249,
+              "per_pixel": 9.45,
+              "vs_median": 12.34,
+              "backing": 241.3,
+              "backed": true
+            }
+          }
+        ],
+        "camera_no_painted": [
+          {
+            "box": [
+              429,
+              213,
+              442,
+              240
+            ],
+            "score": 0.633,
+            "support": {
+              "events": 1783,
+              "per_pixel": 5.08,
+              "vs_median": 6.64,
+              "backing": 179.3,
+              "backed": true
+            }
+          }
+        ],
+        "counts": {
+          "painted": 2,
+          "camera": 2,
+          "in_both": 1,
+          "painted_no_camera": 1,
+          "camera_no_painted": 1,
+          "left_out_with_events": 1,
+          "invented_no_events": 0
+        }
+      },
+      "seconds": 10.1,
+      "model_seconds": 5.7
+    },
+    {
+      "i": 11,
+      "tool": "report",
+      "args": {
+        "finding": "At 6.8 seconds the camera holds 2 persons and the painting shows 1 of them. At 1.1 seconds the camera holds 3 persons and the painting shows 0 of them. At 3.4 seconds the camera holds 5 persons and the painting shows 1 of them. At 5.6 seconds the camera holds 5 persons and the painting shows 3 of them. At 7.9 seconds the camera holds 2 persons and the painting shows 1 of them. At 6.8 seconds the camera holds 1 tram and the painting shows 0 of them. The tram at 6.8 seconds was restored with events support of 350583 events in an 800 ms window.",
+        "view": "events+camera",
+        "invented": "At 6.8 seconds the painting shows 4 cars and the camera holds 3 cars. At 6.8 seconds the painting shows 1 car with no camera match. At 1.1 seconds the painting shows 1 person with no camera match."
+      },
+      "reason": "Summarize findings from compares and repaint using camera and events",
+      "result": {
+        "finding": "At 6.8 seconds the camera holds 2 persons and the painting shows 1 of them. At 1.1 seconds the camera holds 3 persons and the painting shows 0 of them. At 3.4 seconds the camera holds 5 persons and the painting shows 1 of them. At 5.6 seconds the camera holds 5 persons and the painting shows 3 of them. At 7.9 seconds the camera holds 2 persons and the painting shows 1 of them. At 6.8 seconds the camera holds 1 tram and the painting shows 0 of them. The tram at 6.8 seconds was restored with events support of 350583 events in an 800 ms window.",
+        "view": "events+camera",
+        "invented": "At 6.8 seconds the painting shows 4 cars and the camera holds 3 cars. At 6.8 seconds the painting shows 1 car with no camera match. At 1.1 seconds the painting shows 1 person with no camera match.",
+        "auto": false,
+        "verdict": {
+          "frames_checked": 5,
+          "frames": [
+            11,
+            34,
+            56,
+            68,
+            79
+          ],
+          "found": 21,
+          "left_out": 14,
+          "invented": 5,
+          "invented_no_events": 0,
+          "repaints": 1,
+          "repaints_helped": 1,
+          "restored": 1,
+          "sam_calls": 20,
+          "paint_calls": 1
+        },
+        "sightings": [
+          {
+            "who": "person",
+            "k": 68,
+            "t_s": 6.8,
+            "box": [
+              70,
+              197,
+              154,
+              347
+            ],
+            "score": 0.938,
+            "from": [
+              "camera"
+            ],
+            "events": 133319,
+            "vs_median": 20.3,
+            "painted": true
+          },
+          {
+            "who": "person",
+            "k": 68,
+            "t_s": 6.8,
+            "box": [
+              435,
+              209,
+              449,
+              243
+            ],
+            "score": 0.86,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 3833,
+            "vs_median": 15.45,
+            "painted": false
+          },
+          {
+            "who": "car",
+            "k": 68,
+            "t_s": 6.8,
+            "box": [
+              345,
+              209,
+              370,
+              232
+            ],
+            "score": 0.524,
+            "from": [
+              "camera"
+            ],
+            "events": 957,
+            "vs_median": 3.19,
+            "painted": true
+          },
+          {
+            "who": "car",
+            "k": 68,
+            "t_s": 6.8,
+            "box": [
+              126,
+              224,
+              166,
+              249
+            ],
+            "score": 0.852,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 64375,
+            "vs_median": 123.49,
+            "painted": false
+          },
+          {
+            "who": "car",
+            "k": 68,
+            "t_s": 6.8,
+            "box": [
+              306,
+              214,
+              330,
+              235
+            ],
+            "score": 0.824,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 716,
+            "vs_median": 2.73,
+            "painted": false,
+            "wide_ms": 800,
+            "wide_events": 6743,
+            "wide_vs_median": 2.78
+          },
+          {
+            "who": "tram",
+            "k": 68,
+            "t_s": 6.8,
+            "box": [
+              185,
+              174,
+              297,
+              247
+            ],
+            "score": 0.863,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 43345,
+            "vs_median": 10.17,
+            "painted": false,
+            "wide_ms": 800,
+            "wide_events": 350583,
+            "wide_vs_median": 8.91,
+            "restored_by": "r1"
+          },
+          {
+            "who": "person",
+            "k": 11,
+            "t_s": 1.1,
+            "box": [
+              462,
+              203,
+              472,
+              238
+            ],
+            "score": 0.805,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 4337,
+            "vs_median": 9.34,
+            "painted": false
+          },
+          {
+            "who": "person",
+            "k": 11,
+            "t_s": 1.1,
+            "box": [
+              437,
+              203,
+              444,
+              230
+            ],
+            "score": 0.531,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 633,
+            "vs_median": 2.52,
+            "painted": false
+          },
+          {
+            "who": "person",
+            "k": 11,
+            "t_s": 1.1,
+            "box": [
+              415,
+              207,
+              427,
+              234
+            ],
+            "score": 0.777,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 1155,
+            "vs_median": 2.69,
+            "painted": false
+          },
+          {
+            "who": "person",
+            "k": 34,
+            "t_s": 3.4,
+            "box": [
+              534,
+              194,
+              552,
+              251
+            ],
+            "score": 0.887,
+            "from": [
+              "camera"
+            ],
+            "events": 9877,
+            "vs_median": 8.75,
+            "painted": true
+          },
+          {
+            "who": "person",
+            "k": 34,
+            "t_s": 3.4,
+            "box": [
+              477,
+              196,
+              504,
+              272
+            ],
+            "score": 0.922,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 12979,
+            "vs_median": 5.75,
+            "painted": false
+          },
+          {
+            "who": "person",
+            "k": 34,
+            "t_s": 3.4,
+            "box": [
+              425,
+              205,
+              433,
+              231
+            ],
+            "score": 0.723,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 1742,
+            "vs_median": 7.61,
+            "painted": false
+          },
+          {
+            "who": "person",
+            "k": 34,
+            "t_s": 3.4,
+            "box": [
+              165,
+              195,
+              189,
+              293
+            ],
+            "score": 0.855,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 9460,
+            "vs_median": 3.66,
+            "painted": false
+          },
+          {
+            "who": "person",
+            "k": 34,
+            "t_s": 3.4,
+            "box": [
+              438,
+              200,
+              452,
+              235
+            ],
+            "score": 0.84,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 2249,
+            "vs_median": 4.17,
+            "painted": false
+          },
+          {
+            "who": "person",
+            "k": 56,
+            "t_s": 5.6,
+            "box": [
+              0,
+              182,
+              42,
+              379
+            ],
+            "score": 0.91,
+            "from": [
+              "camera"
+            ],
+            "events": 22209,
+            "vs_median": 5.9,
+            "painted": true
+          },
+          {
+            "who": "person",
+            "k": 56,
+            "t_s": 5.6,
+            "box": [
+              258,
+              194,
+              294,
+              314
+            ],
+            "score": 0.91,
+            "from": [
+              "camera"
+            ],
+            "events": 30213,
+            "vs_median": 15.37,
+            "painted": true
+          },
+          {
+            "who": "person",
+            "k": 56,
+            "t_s": 5.6,
+            "box": [
+              428,
+              204,
+              438,
+              233
+            ],
+            "score": 0.695,
+            "from": [
+              "camera"
+            ],
+            "events": 4694,
+            "vs_median": 35.57,
+            "painted": true
+          },
+          {
+            "who": "person",
+            "k": 56,
+            "t_s": 5.6,
+            "box": [
+              619,
+              187,
+              640,
+              269
+            ],
+            "score": 0.899,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 11270,
+            "vs_median": 14.38,
+            "painted": false
+          },
+          {
+            "who": "person",
+            "k": 56,
+            "t_s": 5.6,
+            "box": [
+              440,
+              203,
+              452,
+              237
+            ],
+            "score": 0.808,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 2541,
+            "vs_median": 13.69,
+            "painted": false
+          },
+          {
+            "who": "person",
+            "k": 79,
+            "t_s": 7.9,
+            "box": [
+              443,
+              209,
+              457,
+              242
+            ],
+            "score": 0.801,
+            "from": [
+              "camera"
+            ],
+            "events": 6820,
+            "vs_median": 19.28,
+            "painted": true
+          },
+          {
+            "who": "person",
+            "k": 79,
+            "t_s": 7.9,
+            "box": [
+              429,
+              213,
+              442,
+              240
+            ],
+            "score": 0.633,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 1783,
+            "vs_median": 6.64,
+            "painted": false
+          }
+        ],
+        "invented_list": [
+          {
+            "who": "car",
+            "k": 68,
+            "t_s": 6.8,
+            "box": [
+              312,
+              211,
+              318,
+              217
+            ],
+            "score": 0.605,
+            "events": 198,
+            "vs_median": 10.55,
+            "events_backed": true
+          },
+          {
+            "who": "car",
+            "k": 68,
+            "t_s": 6.8,
+            "box": [
+              318,
+              211,
+              328,
+              219
+            ],
+            "score": 0.597,
+            "events": 1664,
+            "vs_median": 39.89,
+            "events_backed": true
+          },
+          {
+            "who": "car",
+            "k": 68,
+            "t_s": 6.8,
+            "box": [
+              331,
+              213,
+              345,
+              223
+            ],
+            "score": 0.801,
+            "events": 530,
+            "vs_median": 7.26,
+            "events_backed": true
+          },
+          {
+            "who": "person",
+            "k": 11,
+            "t_s": 1.1,
+            "box": [
+              125,
+              208,
+              159,
+              302
+            ],
+            "score": 0.887,
+            "events": 14807,
+            "vs_median": 3.49,
+            "events_backed": true
+          },
+          {
+            "who": "person",
+            "k": 79,
+            "t_s": 7.9,
+            "box": [
+              117,
+              201,
+              131,
+              218
+            ],
+            "score": 0.543,
+            "events": 2249,
+            "vs_median": 12.34,
+            "events_backed": true
+          }
+        ],
+        "drive_list": [
+          {
+            "who": "person",
+            "t_s": 1.1,
+            "k": 11,
+            "box": [
+              125,
+              208,
+              159,
+              302
+            ],
+            "from": [],
+            "events": 14807,
+            "painting": "invented"
+          },
+          {
+            "who": "person",
+            "t_s": 1.1,
+            "k": 11,
+            "box": [
+              415,
+              207,
+              427,
+              234
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 1155,
+            "painting": "left out"
+          },
+          {
+            "who": "person",
+            "t_s": 1.1,
+            "k": 11,
+            "box": [
+              437,
+              203,
+              444,
+              230
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 633,
+            "painting": "left out"
+          },
+          {
+            "who": "person",
+            "t_s": 1.1,
+            "k": 11,
+            "box": [
+              462,
+              203,
+              472,
+              238
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 4337,
+            "painting": "left out"
+          },
+          {
+            "who": "person",
+            "t_s": 3.4,
+            "k": 34,
+            "box": [
+              165,
+              195,
+              189,
+              293
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 9460,
+            "painting": "left out"
+          },
+          {
+            "who": "person",
+            "t_s": 3.4,
+            "k": 34,
+            "box": [
+              425,
+              205,
+              433,
+              231
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 1742,
+            "painting": "left out"
+          },
+          {
+            "who": "person",
+            "t_s": 3.4,
+            "k": 34,
+            "box": [
+              438,
+              200,
+              452,
+              235
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 2249,
+            "painting": "left out"
+          },
+          {
+            "who": "person",
+            "t_s": 3.4,
+            "k": 34,
+            "box": [
+              477,
+              196,
+              504,
+              272
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 12979,
+            "painting": "left out"
+          },
+          {
+            "who": "person",
+            "t_s": 3.4,
+            "k": 34,
+            "box": [
+              534,
+              194,
+              552,
+              251
+            ],
+            "from": [
+              "camera"
+            ],
+            "events": 9877,
+            "painting": "painted"
+          },
+          {
+            "who": "person",
+            "t_s": 5.6,
+            "k": 56,
+            "box": [
+              0,
+              182,
+              42,
+              379
+            ],
+            "from": [
+              "camera"
+            ],
+            "events": 22209,
+            "painting": "painted"
+          },
+          {
+            "who": "person",
+            "t_s": 5.6,
+            "k": 56,
+            "box": [
+              258,
+              194,
+              294,
+              314
+            ],
+            "from": [
+              "camera"
+            ],
+            "events": 30213,
+            "painting": "painted"
+          },
+          {
+            "who": "person",
+            "t_s": 5.6,
+            "k": 56,
+            "box": [
+              428,
+              204,
+              438,
+              233
+            ],
+            "from": [
+              "camera"
+            ],
+            "events": 4694,
+            "painting": "painted"
+          },
+          {
+            "who": "person",
+            "t_s": 5.6,
+            "k": 56,
+            "box": [
+              440,
+              203,
+              452,
+              237
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 2541,
+            "painting": "left out"
+          },
+          {
+            "who": "person",
+            "t_s": 5.6,
+            "k": 56,
+            "box": [
+              619,
+              187,
+              640,
+              269
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 11270,
+            "painting": "left out"
+          },
+          {
+            "who": "car",
+            "t_s": 6.8,
+            "k": 68,
+            "box": [
+              126,
+              224,
+              166,
+              249
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 64375,
+            "painting": "left out"
+          },
+          {
+            "who": "car",
+            "t_s": 6.8,
+            "k": 68,
+            "box": [
+              306,
+              214,
+              330,
+              235
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 716,
+            "painting": "left out"
+          },
+          {
+            "who": "car",
+            "t_s": 6.8,
+            "k": 68,
+            "box": [
+              312,
+              211,
+              318,
+              217
+            ],
+            "from": [],
+            "events": 198,
+            "painting": "invented"
+          },
+          {
+            "who": "car",
+            "t_s": 6.8,
+            "k": 68,
+            "box": [
+              318,
+              211,
+              328,
+              219
+            ],
+            "from": [],
+            "events": 1664,
+            "painting": "invented"
+          },
+          {
+            "who": "car",
+            "t_s": 6.8,
+            "k": 68,
+            "box": [
+              331,
+              213,
+              345,
+              223
+            ],
+            "from": [],
+            "events": 530,
+            "painting": "invented"
+          },
+          {
+            "who": "car",
+            "t_s": 6.8,
+            "k": 68,
+            "box": [
+              345,
+              209,
+              370,
+              232
+            ],
+            "from": [
+              "camera"
+            ],
+            "events": 957,
+            "painting": "painted"
+          },
+          {
+            "who": "person",
+            "t_s": 6.8,
+            "k": 68,
+            "box": [
+              70,
+              197,
+              154,
+              347
+            ],
+            "from": [
+              "camera"
+            ],
+            "events": 133319,
+            "painting": "painted"
+          },
+          {
+            "who": "person",
+            "t_s": 6.8,
+            "k": 68,
+            "box": [
+              435,
+              209,
+              449,
+              243
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 3833,
+            "painting": "left out"
+          },
+          {
+            "who": "tram",
+            "t_s": 6.8,
+            "k": 68,
+            "box": [
+              185,
+              174,
+              297,
+              247
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 43345,
+            "painting": "left out, brought back by repaint r1"
+          },
+          {
+            "who": "person",
+            "t_s": 7.9,
+            "k": 79,
+            "box": [
+              117,
+              201,
+              131,
+              218
+            ],
+            "from": [],
+            "events": 2249,
+            "painting": "invented"
+          },
+          {
+            "who": "person",
+            "t_s": 7.9,
+            "k": 79,
+            "box": [
+              429,
+              213,
+              442,
+              240
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 1783,
+            "painting": "left out"
+          },
+          {
+            "who": "person",
+            "t_s": 7.9,
+            "k": 79,
+            "box": [
+              443,
+              209,
+              457,
+              242
+            ],
+            "from": [
+              "camera"
+            ],
+            "events": 6820,
+            "painting": "painted"
+          }
+        ],
+        "lines": [
+          "1.1 s, person at [125, 208, 159, 302]: only in the painting, the camera has no match; 14807 events in that box over 100 ms.",
+          "1.1 s, person at [415, 207, 427, 234]: from the camera and the events, 1155 events over 100 ms; painting: left out.",
+          "1.1 s, person at [437, 203, 444, 230]: from the camera and the events, 633 events over 100 ms; painting: left out.",
+          "1.1 s, person at [462, 203, 472, 238]: from the camera and the events, 4337 events over 100 ms; painting: left out.",
+          "3.4 s, person at [165, 195, 189, 293]: from the camera and the events, 9460 events over 100 ms; painting: left out.",
+          "3.4 s, person at [425, 205, 433, 231]: from the camera and the events, 1742 events over 100 ms; painting: left out.",
+          "3.4 s, person at [438, 200, 452, 235]: from the camera and the events, 2249 events over 100 ms; painting: left out.",
+          "3.4 s, person at [477, 196, 504, 272]: from the camera and the events, 12979 events over 100 ms; painting: left out.",
+          "3.4 s, person at [534, 194, 552, 251]: from the camera, 9877 events over 100 ms; painting: painted.",
+          "5.6 s, person at [0, 182, 42, 379]: from the camera, 22209 events over 100 ms; painting: painted.",
+          "5.6 s, person at [258, 194, 294, 314]: from the camera, 30213 events over 100 ms; painting: painted.",
+          "5.6 s, person at [428, 204, 438, 233]: from the camera, 4694 events over 100 ms; painting: painted.",
+          "5.6 s, person at [440, 203, 452, 237]: from the camera and the events, 2541 events over 100 ms; painting: left out.",
+          "5.6 s, person at [619, 187, 640, 269]: from the camera and the events, 11270 events over 100 ms; painting: left out.",
+          "6.8 s, car at [126, 224, 166, 249]: from the camera and the events, 64375 events over 100 ms; painting: left out.",
+          "6.8 s, car at [306, 214, 330, 235]: from the camera and the events, 716 events over 100 ms; painting: left out.",
+          "6.8 s, car at [312, 211, 318, 217]: only in the painting, the camera has no match; 198 events in that box over 100 ms.",
+          "6.8 s, car at [318, 211, 328, 219]: only in the painting, the camera has no match; 1664 events in that box over 100 ms.",
+          "6.8 s, car at [331, 213, 345, 223]: only in the painting, the camera has no match; 530 events in that box over 100 ms.",
+          "6.8 s, car at [345, 209, 370, 232]: from the camera, 957 events over 100 ms; painting: painted.",
+          "6.8 s, person at [70, 197, 154, 347]: from the camera, 133319 events over 100 ms; painting: painted.",
+          "6.8 s, person at [435, 209, 449, 243]: from the camera and the events, 3833 events over 100 ms; painting: left out.",
+          "6.8 s, tram at [185, 174, 297, 247]: from the camera and the events, 43345 events over 100 ms; painting: left out, brought back by repaint r1.",
+          "7.9 s, person at [117, 201, 131, 218]: only in the painting, the camera has no match; 2249 events in that box over 100 ms.",
+          "7.9 s, person at [429, 213, 442, 240]: from the camera and the events, 1783 events over 100 ms; painting: left out.",
+          "7.9 s, person at [443, 209, 457, 242]: from the camera, 6820 events over 100 ms; painting: painted."
+        ]
+      },
+      "seconds": 12.2,
+      "model_seconds": 12.2
+    }
+  ],
+  "held": 68,
+  "guided": true,
+  "seconds": 142.9
+}

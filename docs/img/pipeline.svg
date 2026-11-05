@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 420" width="1240" height="420" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#7d8796"/>
+    </marker>
+    <marker id="w" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#ffaa50"/>
+    </marker>
+  </defs>
+  <rect width="1240" height="420" rx="16" fill="#0e1116"/>
+
+  <g>
+    <rect x="30" y="90" width="200" height="170" rx="14" fill="#161b22" stroke="#2d3440" stroke-width="1.5"/>
+    <g transform="translate(0,-10)">
+    <path d="M70 178 L88 150 Q92 144 100 144 L160 144 Q168 144 172 150 L190 178 Q196 180 196 188 L196 204 L64 204 L64 188 Q64 180 70 178 Z" fill="#232a35" stroke="#7d8796" stroke-width="1.5"/>
+    <circle cx="92" cy="206" r="11" fill="#0e1116" stroke="#7d8796" stroke-width="1.5"/>
+    <circle cx="168" cy="206" r="11" fill="#0e1116" stroke="#7d8796" stroke-width="1.5"/>
+    <circle cx="118" cy="136" r="6" fill="#e8eaee"/>
+    <circle cx="142" cy="136" r="6" fill="#78beff"/>
+    </g>
+    <text x="130" y="114" text-anchor="middle" font-size="12" fill="#969eaa">camera · events</text>
+    <text x="130" y="240" text-anchor="middle" font-size="17" font-weight="600" fill="#e8eaee">Car with two sensors</text>
+    <text x="130" y="72" text-anchor="middle" font-size="13" fill="#7d8796">1</text>
+  </g>
+
+  <g>
+    <rect x="270" y="90" width="200" height="170" rx="14" fill="#161b22" stroke="#2d3440" stroke-width="1.5"/>
+    <text x="370" y="72" text-anchor="middle" font-size="13" fill="#7d8796">2</text>
+    <text x="370" y="140" text-anchor="middle" font-size="19" font-weight="600" fill="#e8eaee">SAM 3.1</text>
+    <text x="370" y="168" text-anchor="middle" font-size="15" fill="#969eaa">prompt "person"</text>
+    <text x="370" y="190" text-anchor="middle" font-size="15" fill="#969eaa">on both views</text>
+    <text x="370" y="232" text-anchor="middle" font-size="16" fill="#ffaa50">people found</text>
+  </g>
+
+  <g>
+    <rect x="510" y="90" width="200" height="170" rx="14" fill="#161b22" stroke="#ffaa50" stroke-width="1.5"/>
+    <text x="610" y="72" text-anchor="middle" font-size="13" fill="#7d8796">3</text>
+    <text x="610" y="140" text-anchor="middle" font-size="19" font-weight="600" fill="#e8eaee">Muse Image</text>
+    <text x="610" y="168" text-anchor="middle" font-size="15" fill="#969eaa">paints a night street</text>
+    <text x="610" y="190" text-anchor="middle" font-size="15" fill="#969eaa">from the events</text>
+    <text x="610" y="232" text-anchor="middle" font-size="16" fill="#ffaa50">a painting</text>
+  </g>
+
+  <g>
+    <rect x="750" y="90" width="200" height="170" rx="14" fill="#161b22" stroke="#2d3440" stroke-width="1.5"/>
+    <text x="850" y="72" text-anchor="middle" font-size="13" fill="#7d8796">4</text>
+    <text x="850" y="140" text-anchor="middle" font-size="19" font-weight="600" fill="#e8eaee">Frames to video</text>
+    <text x="850" y="168" text-anchor="middle" font-size="15" fill="#969eaa">one painting</text>
+    <text x="850" y="190" text-anchor="middle" font-size="15" fill="#969eaa">per moment</text>
+    <text x="850" y="232" text-anchor="middle" font-size="16" fill="#ffaa50">a video from events</text>
+  </g>
+
+  <g>
+    <rect x="990" y="90" width="220" height="170" rx="14" fill="#161b22" stroke="#78beff" stroke-width="1.5"/>
+    <text x="1100" y="72" text-anchor="middle" font-size="13" fill="#7d8796">5</text>
+    <text x="1100" y="132" text-anchor="middle" font-size="19" font-weight="600" fill="#e8eaee">The agent checks</text>
+    <text x="1100" y="160" text-anchor="middle" font-size="15" fill="#969eaa">painting vs both sensors</text>
+    <text x="1100" y="200" text-anchor="middle" font-size="15" fill="#e8eaee">Muse Spark (hosted)</text>
+    <text x="1100" y="222" text-anchor="middle" font-size="15" fill="#969eaa">or</text>
+    <text x="1100" y="244" text-anchor="middle" font-size="15" fill="#e8eaee">Muse Glimmer (our H200)</text>
+  </g>
+
+  <path d="M232 175 L266 175" stroke="#7d8796" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <path d="M472 175 L506 175" stroke="#7d8796" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <path d="M712 175 L746 175" stroke="#7d8796" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <path d="M952 175 L986 175" stroke="#7d8796" stroke-width="2" fill="none" marker-end="url(#a)"/>
+
+  <path d="M1100 262 L1100 330 Q1100 344 1086 344 L624 344 Q610 344 610 330 L610 266" stroke="#ffaa50" stroke-width="2" fill="none" stroke-dasharray="7 6" marker-end="url(#w)"/>
+  <text x="855" y="372" text-anchor="middle" font-size="15" fill="#ffaa50">asks for a repaint where the painting left something out</text>
+
+  <path d="M160 88 L160 46 Q160 34 172 34 L1048 34 Q1060 34 1060 46 L1060 86" stroke="#78beff" stroke-width="1.5" fill="none" stroke-dasharray="3 5" marker-end="url(#a)" opacity="0.8"/>
+  <text x="610" y="26" text-anchor="middle" font-size="13" fill="#78beff" opacity="0.9">both sensors go to the agent</text>
+</svg>

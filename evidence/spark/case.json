@@ -1,0 +1,72 @@
+{
+  "moment": "crosswalk",
+  "k": 68,
+  "t_us_paint": 6800000,
+  "t_us_camera": 6799993,
+  "gap_us": -7,
+  "camera_tram_box": [
+    185,
+    174,
+    297,
+    247
+  ],
+  "painted_tram_box_manual_r2": [
+    183,
+    178,
+    279,
+    245
+  ],
+  "overlap_manual_r2": 0.758,
+  "event_support": {
+    "10ms": {
+      "events": 4201,
+      "vs_median": 9.67
+    },
+    "100ms": {
+      "events": 43345,
+      "vs_median": 10.17
+    },
+    "300ms": {
+      "events": 135149,
+      "vs_median": 9.88
+    },
+    "500ms": {
+      "events": 221953,
+      "vs_median": 9.35
+    },
+    "1000ms": {
+      "events": 429506,
+      "vs_median": 8.54
+    }
+  },
+  "painter_input_mean_inside_box": 36.17,
+  "painter_input_mean_outside_box": 15.37,
+  "agent_trace": "trace_spark_crosswalk_run2.json",
+  "after_agent": "after_agent_r3_headon.webp",
+  "painted_tram_box_agent_r3": [
+    209,
+    166,
+    302,
+    261
+  ],
+  "note_agent": "a tram ahead in the left lane at the centre of the frame, its front toward the viewer",
+  "seven_frames_camera_tram": {
+    "66": 1,
+    "67": 1,
+    "68": 1,
+    "69": 1,
+    "70": 2,
+    "71": 1,
+    "72": 1
+  },
+  "seven_frames_painted_tram": {
+    "66": 0,
+    "67": 0,
+    "68": 0,
+    "69": 0,
+    "70": 0,
+    "71": 0,
+    "72": 0
+  },
+  "box_iou_agent_r3": 0.607
+}

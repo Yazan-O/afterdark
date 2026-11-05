@@ -1,0 +1,188 @@
+{
+  "66": {
+    "camera": [
+      {
+        "box": [
+          182,
+          171,
+          297,
+          249
+        ],
+        "score": 0.813,
+        "events_10ms": 4676,
+        "vs_median_10ms": 9.03
+      }
+    ],
+    "counts": {
+      "painted": 0,
+      "camera": 1,
+      "in_both": 0,
+      "painted_no_camera": 0,
+      "camera_no_painted": 1,
+      "left_out_with_events": 1,
+      "invented_no_events": 0
+    },
+    "painted_boxes": []
+  },
+  "67": {
+    "camera": [
+      {
+        "box": [
+          186,
+          173,
+          297,
+          249
+        ],
+        "score": 0.816,
+        "events_10ms": 4804,
+        "vs_median_10ms": 8.27
+      }
+    ],
+    "counts": {
+      "painted": 0,
+      "camera": 1,
+      "in_both": 0,
+      "painted_no_camera": 0,
+      "camera_no_painted": 1,
+      "left_out_with_events": 1,
+      "invented_no_events": 0
+    },
+    "painted_boxes": []
+  },
+  "68": {
+    "camera": [
+      {
+        "box": [
+          185,
+          174,
+          297,
+          247
+        ],
+        "score": 0.863,
+        "events_10ms": 4201,
+        "vs_median_10ms": 9.67
+      }
+    ],
+    "counts": {
+      "painted": 0,
+      "camera": 1,
+      "in_both": 0,
+      "painted_no_camera": 0,
+      "camera_no_painted": 1,
+      "left_out_with_events": 1,
+      "invented_no_events": 0
+    },
+    "painted_boxes": []
+  },
+  "69": {
+    "camera": [
+      {
+        "box": [
+          194,
+          175,
+          296,
+          247
+        ],
+        "score": 0.832,
+        "events_10ms": 3861,
+        "vs_median_10ms": 9.92
+      }
+    ],
+    "counts": {
+      "painted": 0,
+      "camera": 1,
+      "in_both": 0,
+      "painted_no_camera": 0,
+      "camera_no_painted": 1,
+      "left_out_with_events": 1,
+      "invented_no_events": 0
+    },
+    "painted_boxes": []
+  },
+  "70": {
+    "camera": [
+      {
+        "box": [
+          197,
+          176,
+          295,
+          247
+        ],
+        "score": 0.75,
+        "events_10ms": 3610,
+        "vs_median_10ms": 9.2
+      },
+      {
+        "box": [
+          173,
+          189,
+          200,
+          242
+        ],
+        "score": 0.652,
+        "events_10ms": 1565,
+        "vs_median_10ms": 19.39
+      }
+    ],
+    "counts": {
+      "painted": 0,
+      "camera": 2,
+      "in_both": 0,
+      "painted_no_camera": 0,
+      "camera_no_painted": 2,
+      "left_out_with_events": 2,
+      "invented_no_events": 0
+    },
+    "painted_boxes": []
+  },
+  "71": {
+    "camera": [
+      {
+        "box": [
+          167,
+          178,
+          298,
+          246
+        ],
+        "score": 0.84,
+        "events_10ms": 5846,
+        "vs_median_10ms": 11.28
+      }
+    ],
+    "counts": {
+      "painted": 0,
+      "camera": 1,
+      "in_both": 0,
+      "painted_no_camera": 0,
+      "camera_no_painted": 1,
+      "left_out_with_events": 1,
+      "invented_no_events": 0
+    },
+    "painted_boxes": []
+  },
+  "72": {
+    "camera": [
+      {
+        "box": [
+          160,
+          178,
+          297,
+          246
+        ],
+        "score": 0.664,
+        "events_10ms": 6360,
+        "vs_median_10ms": 11.14
+      }
+    ],
+    "counts": {
+      "painted": 0,
+      "camera": 1,
+      "in_both": 0,
+      "painted_no_camera": 0,
+      "camera_no_painted": 1,
+      "left_out_with_events": 1,
+      "invented_no_events": 0
+    },
+    "painted_boxes": []
+  }
+}

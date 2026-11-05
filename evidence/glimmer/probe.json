@@ -1,0 +1,86 @@
+{
+  "endpoint": "http://127.0.0.1:8091/v1/chat/completions",
+  "models_listed": [
+    "Muse-Glimmer-30B"
+  ],
+  "request_summary": {
+    "image": "in/08.png (data URL, 112732 bytes base64)",
+    "user_text": "Describe what is in this image in one or two sentences, then widen the time window to 50 ms by calling the tool.",
+    "tools": [
+      "widen_window(window_ms:number)"
+    ],
+    "tool_choice": "auto",
+    "max_tokens": 2000,
+    "chat_template_kwargs": {
+      "reasoning_strength": "low"
+    }
+  },
+  "wall_seconds": 6.858,
+  "usage": {
+    "completion_tokens": 188,
+    "prompt_tokens": 827,
+    "total_tokens": 1015,
+    "prompt_tokens_details": {
+      "cached_tokens": 822
+    }
+  },
+  "completion_tokens_per_wall_second": 27.41,
+  "server_timings": {
+    "cache_n": 822,
+    "prompt_n": 5,
+    "prompt_ms": 125.424,
+    "prompt_per_token_ms": 25.0848,
+    "prompt_per_second": 39.86477867074882,
+    "predicted_n": 188,
+    "predicted_ms": 6283.511,
+    "predicted_per_token_ms": 33.60166310160428,
+    "predicted_per_second": 29.760431707686994
+  },
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "tool_calls",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The image shows a grainy, low-light nighttime street view with parked cars along both sides, a brightly lit white car with its headlights on approaching in the distance, and buildings lining the road under a dark sky.\n\nI’ll now widen the event accumulation window to make the view less noisy.\n",
+          "reasoning_content": "Describe what is in this image in one or two sentences, then widen the time window to 50 ms by calling the tool.\n\nDescribe image: night street scene with parked cars, a car with headlights on, buildings on sides, grainy.\n\nThen widen_window window_ms=50.\n\nWe need do both: describe then call tool.",
+          "tool_calls": [
+            {
+              "type": "function",
+              "function": {
+                "name": "widen_window",
+                "arguments": "{\"window_ms\":50.0}"
+              },
+              "id": "uyZFFymqQLCZN61hQWj5V76zSHmWtWrD"
+            }
+          ]
+        }
+      }
+    ],
+    "created": 1793780859,
+    "model": "Muse-Glimmer-30B",
+    "system_fingerprint": "b12099-bee23322f",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 188,
+      "prompt_tokens": 827,
+      "total_tokens": 1015,
+      "prompt_tokens_details": {
+        "cached_tokens": 822
+      }
+    },
+    "id": "chatcmpl-bn5D5Oq0liv40Qa673jJs0XzgfzxEkVA",
+    "timings": {
+      "cache_n": 822,
+      "prompt_n": 5,
+      "prompt_ms": 125.424,
+      "prompt_per_token_ms": 25.0848,
+      "prompt_per_second": 39.86477867074882,
+      "predicted_n": 188,
+      "predicted_ms": 6283.511,
+      "predicted_per_token_ms": 33.60166310160428,
+      "predicted_per_second": 29.760431707686994
+    }
+  }
+}

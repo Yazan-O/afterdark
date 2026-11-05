@@ -1,0 +1,30 @@
+{
+ "moment": "crosswalk",
+ "concept": "tram",
+ "frames": [
+  {
+   "k": 68,
+   "t_s": 6.8,
+   "image": "repaint/0068.hold.webp",
+   "painted_box": [
+    210,
+    166,
+    303,
+    261
+   ],
+   "camera_box": [
+    185,
+    174,
+    297,
+    247
+   ],
+   "overlap": 0.596,
+   "events_10ms": 4201,
+   "vs_median_10ms": 9.67,
+   "base_paintings_tram": 0
+  }
+ ],
+ "reference": "repaint/0068.r3.webp",
+ "note": "a tram ahead in the left lane at the centre of the frame, its front toward the viewer",
+ "made_by": "The agent painted k=68 only."
+}

@@ -1,0 +1,911 @@
+{
+ "fps": 30,
+ "film": [
+  {
+   "id": "a_take1",
+   "moment": "crosswalk",
+   "t0": 0.8,
+   "dur": 19.8,
+   "poster": 0.4,
+   "path": [
+    [
+     10.5,
+     0.25
+    ],
+    [
+     9.3,
+     0.28
+    ]
+   ],
+   "sheet": [
+    [
+     0,
+     0.6
+    ],
+    [
+     1,
+     0.8
+    ],
+    [
+     5.6,
+     1.1
+    ],
+    [
+     9,
+     4.1
+    ],
+    [
+     32,
+     9
+    ]
+   ],
+   "mask_from": 10.5,
+   "cues": [
+    {
+     "at": 0,
+     "to": 3,
+     "text": "This camera can't take pictures."
+    },
+    {
+     "at": 3,
+     "to": 6,
+     "text": "This is everything it saw."
+    },
+    {
+     "at": 6.2,
+     "to": 10.3,
+     "text": "Muse Image paints it from nothing but flickers of light."
+    },
+    {
+     "at": 10.6,
+     "to": 13.8,
+     "text": "Someone is there."
+    },
+    {
+     "at": 14,
+     "to": 19.6,
+     "text": "The camera finds them. The event sensor draws them."
+    }
+   ]
+  },
+  {
+   "id": "b_colour",
+   "moment": "street",
+   "t0": 1.0,
+   "dur": 11.4,
+   "hold_at": 2.1,
+   "hold_clock": 0.5,
+   "path": [
+    [
+     7.3,
+     0.15
+    ],
+    [
+     4.1,
+     0
+    ]
+   ],
+   "mask_from": 99,
+   "cues": [
+    {
+     "at": 0.8,
+     "to": 7,
+     "text": "The sensor records no colour. Every colour here is a guess."
+    },
+    {
+     "at": 7.2,
+     "to": 9.6,
+     "text": "The real camera. Same street."
+    }
+   ],
+   "keys": [
+    {
+     "at": 7.2,
+     "to": 9.6,
+     "key": "space"
+    }
+   ],
+   "keypic": [
+    {
+     "at": 6.6,
+     "to": 10.4,
+     "key": "Space",
+     "down": [
+      [
+       7.2,
+       9.6
+      ]
+     ]
+    }
+   ],
+   "blur": [
+    {
+     "at": 7.2,
+     "to": 9.6,
+     "box": [
+      430,
+      360,
+      600,
+      510
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c_dream",
+   "moment": "crosswalk",
+   "t0": 1.6,
+   "dur": 8.6,
+   "path": [
+    [
+     8.6,
+     0.2
+    ]
+   ],
+   "cues": [
+    {
+     "at": 0.8,
+     "to": 8.3,
+     "text": "The sensor was silent here. This part is invented."
+    }
+   ],
+   "keys": [
+    {
+     "at": 0.6,
+     "to": 8,
+     "key": "d"
+    }
+   ],
+   "keypic": [
+    {
+     "at": 0,
+     "to": 8.4,
+     "key": "D",
+     "down": [
+      [
+       0.6,
+       8
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e_climax",
+   "moment": "crosswalk",
+   "t0": 6.8,
+   "dur": 19.6,
+   "path": [
+    [
+     19.6,
+     0
+    ]
+   ],
+   "hold_at": 6.8,
+   "hold_clock": 0.5,
+   "mask_from": 99,
+   "swell": [
+    [
+     0,
+     1
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     8.5,
+     2.2
+    ],
+    [
+     11,
+     3
+    ],
+    [
+     13.5,
+     1
+    ],
+    [
+     19.6,
+     0.8
+    ]
+   ],
+   "fx": [
+    {
+     "at": 0,
+     "to": 19.6,
+     "hold": 68
+    },
+    {
+     "at": 5,
+     "to": 14.4,
+     "spot": {
+      "k": 68,
+      "box": [
+       185,
+       174,
+       297,
+       247
+      ],
+      "dim": 1
+     }
+    },
+    {
+     "at": 6,
+     "to": 12.6,
+     "flare": [
+      185,
+      174,
+      297,
+      247
+     ],
+     "win": 800,
+     "grow": 4
+    },
+    {
+     "at": 9.4,
+     "to": 19.6,
+     "develop": {
+      "image": "repaint/0068.r3.webp",
+      "box": [
+       185,
+       96,
+       312,
+       268
+      ],
+      "over": 4,
+      "out": 0
+     }
+    }
+   ],
+   "cues": [
+    {
+     "at": 1.1,
+     "to": 3.4,
+     "text": "The camera finds a tram."
+    },
+    {
+     "at": 3.6,
+     "to": 6,
+     "text": "The painting missed this."
+    },
+    {
+     "at": 6.2,
+     "to": 9.4,
+     "text": "The events confirm it."
+    },
+    {
+     "at": 9.6,
+     "to": 13.2,
+     "text": "repaint: tram, front toward the viewer"
+    },
+    {
+     "at": 14.8,
+     "to": 16.8,
+     "text": "The real tram."
+    },
+    {
+     "at": 16.8,
+     "to": 19.4,
+     "text": "The painted tram."
+    }
+   ],
+   "keys": [
+    {
+     "at": 1,
+     "to": 3.4,
+     "key": "space"
+    },
+    {
+     "at": 14.8,
+     "to": 16.8,
+     "key": "space"
+    }
+   ],
+   "keypic": [
+    {
+     "at": 0.5,
+     "to": 3.8,
+     "key": "Space",
+     "down": [
+      [
+       1,
+       3.4
+      ]
+     ]
+    },
+    {
+     "at": 14.2,
+     "to": 17.2,
+     "key": "Space",
+     "down": [
+      [
+       14.8,
+       16.8
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f_people1",
+   "moment": "crosswalk",
+   "t0": 3.0,
+   "dur": 9,
+   "path": [
+    [
+     9,
+     0
+    ]
+   ],
+   "hold_at": 3.0,
+   "hold_clock": 0.5,
+   "mask_from": 99,
+   "fx": [
+    {
+     "at": 0,
+     "to": 9,
+     "hold": 30
+    },
+    {
+     "at": 0.6,
+     "to": 9,
+     "spot": {
+      "k": 30,
+      "box": [
+       188,
+       197,
+       210,
+       282
+      ],
+      "dim": 0.8
+     }
+    },
+    {
+     "at": 3.2,
+     "to": 6.4,
+     "k": 30,
+     "win": 300,
+     "marks": [
+      {
+       "box": [
+        188,
+        197,
+        210,
+        282
+       ]
+      }
+     ]
+    },
+    {
+     "at": 3.2,
+     "to": 9,
+     "stripmarks": [
+      3.0
+     ]
+    }
+   ],
+   "cues": [
+    {
+     "at": 0.2,
+     "to": 3.2,
+     "text": "Here it was a tram. Painted pictures leave people out too."
+    },
+    {
+     "at": 3.4,
+     "to": 6.4,
+     "text": "Two sensors catch them."
+    },
+    {
+     "at": 6.6,
+     "to": 8.8,
+     "text": "The camera has this one."
+    }
+   ],
+   "keys": [
+    {
+     "at": 6.6,
+     "to": 8.8,
+     "key": "space"
+    }
+   ],
+   "keypic": [
+    {
+     "at": 6.2,
+     "to": 9,
+     "key": "Space",
+     "down": [
+      [
+       6.6,
+       8.8
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f_people2",
+   "moment": "crosswalk",
+   "t0": 6.8,
+   "dur": 3.6,
+   "path": [
+    [
+     3.6,
+     0
+    ]
+   ],
+   "hold_at": 6.8,
+   "hold_clock": 0.5,
+   "mask_from": 99,
+   "fx": [
+    {
+     "at": 0,
+     "to": 3.6,
+     "hold": 68
+    },
+    {
+     "at": 0,
+     "to": 3.6,
+     "spot": {
+      "k": 68,
+      "box": [
+       435,
+       209,
+       449,
+       243
+      ],
+      "dim": 0.8
+     }
+    },
+    {
+     "at": 0.3,
+     "to": 3.6,
+     "k": 68,
+     "win": 300,
+     "marks": [
+      {
+       "box": [
+        435,
+        209,
+        449,
+        243
+       ]
+      }
+     ]
+    },
+    {
+     "at": 0,
+     "to": 3.6,
+     "stripmarks": [
+      3.0,
+      6.8
+     ]
+    }
+   ],
+   "cues": [
+    {
+     "at": 0.4,
+     "to": 3.4,
+     "text": "3.8 seconds on, another one."
+    }
+   ]
+  },
+  {
+   "id": "g_counts",
+   "moment": "crosswalk",
+   "t0": 0.5,
+   "dur": 6.6,
+   "path": [
+    [
+     6.6,
+     0
+    ]
+   ],
+   "hold_at": 0.5,
+   "hold_clock": 0.5,
+   "mask_from": 99,
+   "strip": [
+    [
+     0,
+     14
+    ],
+    [
+     1,
+     56
+    ],
+    [
+     6.6,
+     56
+    ]
+   ],
+   "fx": [
+    {
+     "at": 0,
+     "to": 6.6,
+     "hold": 5
+    },
+    {
+     "at": 0.4,
+     "to": 6.6,
+     "k": 5,
+     "win": 300,
+     "marks": [
+      {
+       "box": [
+        450,
+        203,
+        459,
+        235
+       ]
+      },
+      {
+       "box": [
+        412,
+        206,
+        422,
+        232
+       ]
+      },
+      {
+       "box": [
+        429,
+        204,
+        437,
+        239
+       ]
+      }
+     ]
+    },
+    {
+     "at": 0.4,
+     "to": 6.6,
+     "stripmarks": [
+      0.5,
+      3.0,
+      6.8,
+      8.5
+     ]
+    }
+   ],
+   "cues": [
+    {
+     "at": 0.3,
+     "to": 6.5,
+     "text": "In 4 sampled moments of this drive, the camera found 14 road users, the painting left out 10, and it invented 1."
+    }
+   ]
+  },
+  {
+   "id": "g_teams",
+   "moment": "street",
+   "t0": 1.7,
+   "dur": 5,
+   "path": [
+    [
+     5,
+     0.2
+    ]
+   ],
+   "cues": [
+    {
+     "at": 0.2,
+     "to": 4.8,
+     "text": "Teams building night perception for cars and robots see who was there."
+    }
+   ]
+  },
+  {
+   "id": "i_intro",
+   "kind": "still",
+   "moment": "crosswalk",
+   "t0": 7.4,
+   "dur": 2.6,
+   "path": [
+    [
+     2.6,
+     0
+    ]
+   ],
+   "hold_at": 7.4,
+   "dim": 0.3,
+   "mask_from": 99,
+   "text": [
+    {
+     "at": 0,
+     "to": 2.6,
+     "cls": "wait",
+     "lines": [
+      "Live: press paint.",
+      "Muse Image paints this frame."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "i_live_a",
+   "clip": "_runs/2026-11-04_hack_live/live_take.mp4",
+   "from": 19.97,
+   "dur": 4.03,
+   "moment": "crosswalk",
+   "t0": 7.4,
+   "path": [
+    [
+     4.03,
+     0
+    ]
+   ],
+   "mask_from": 99,
+   "clicks": [
+    0.05
+   ],
+   "swell": [
+    [
+     0,
+     1
+    ],
+    [
+     4,
+     0.8
+    ]
+   ]
+  },
+  {
+   "id": "i_wait",
+   "kind": "still",
+   "moment": "crosswalk",
+   "t0": 7.4,
+   "dur": 3,
+   "path": [
+    [
+     3,
+     0
+    ]
+   ],
+   "hold_at": 7.4,
+   "dim": 0.14,
+   "mask_from": 99,
+   "swell": [
+    [
+     0,
+     0.5
+    ],
+    [
+     3,
+     0.5
+    ]
+   ],
+   "text": [
+    {
+     "at": 0,
+     "to": 3,
+     "cls": "wait",
+     "lines": [
+      "The real wait: 122.7 s, about two minutes.",
+      "117 s cut here."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "i_live_b",
+   "clip": "_runs/2026-11-04_hack_live/live_take.mp4",
+   "from": 141.0,
+   "dur": 8.5,
+   "moment": "crosswalk",
+   "t0": 7.4,
+   "path": [
+    [
+     8.5,
+     0
+    ]
+   ],
+   "mask_from": 99,
+   "ticks": [
+    2.3
+   ],
+   "swell": [
+    [
+     0,
+     0.8
+    ],
+    [
+     2.3,
+     0.8
+    ],
+    [
+     4,
+     1.4
+    ],
+    [
+     8.5,
+     1
+    ]
+   ]
+  },
+  {
+   "id": "j_built",
+   "kind": "still",
+   "moment": "crosswalk",
+   "t0": 7.4,
+   "dur": 8,
+   "path": [
+    [
+     8,
+     0
+    ]
+   ],
+   "hold_at": 7.4,
+   "dim": 0.2,
+   "mask_from": 99,
+   "swell": [
+    [
+     0,
+     0.5
+    ],
+    [
+     8,
+     0.5
+    ]
+   ],
+   "text": [
+    {
+     "at": 0,
+     "to": 8,
+     "cls": "models",
+     "reveal": 0.45,
+     "lines": [
+      "Muse Image        paints the street from events",
+      "SAM 3.1           finds the people",
+      "Muse Spark 1.3    runs the agent that checks the painting",
+      "Muse Glimmer 30B  the same agent on open weights,",
+      "                  on our lab machine's H200,",
+      "                  trace_glimmer_crosswalk.json"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "k_end",
+   "moment": "crosswalk",
+   "t0": 0.8,
+   "dur": 9,
+   "path": [
+    [
+     9,
+     0.25
+    ]
+   ],
+   "sheet": [
+    [
+     0,
+     0.6
+    ],
+    [
+     9,
+     0.6
+    ]
+   ],
+   "mask_from": 99,
+   "fade_out": 3,
+   "dim": 0.45,
+   "cues": [
+    {
+     "at": 0.3,
+     "to": 9,
+     "text": "Afterdark. Hold a key. See what it really saw."
+    }
+   ],
+   "text": [
+    {
+     "at": 1,
+     "to": 9,
+     "cls": "endurl",
+     "lines": [
+      "[live URL pending]",
+      "[repo URL pending]",
+      "Data: DSEC, CC BY-SA 4.0",
+      "Built in the hackathon: pipeline, page, agent, server.",
+      "Recordings and pretrained models came before it."
+     ]
+    }
+   ]
+  }
+ ],
+ "loop": [
+  {
+   "id": "loop",
+   "moment": "crosswalk",
+   "t0": 3.6,
+   "dur": 20,
+   "path": [
+    [
+     4,
+     0.2
+    ],
+    [
+     8,
+     0.3
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     4,
+     0.2
+    ]
+   ],
+   "sheet": [
+    [
+     0,
+     0.6
+    ],
+    [
+     0.8,
+     0.9
+    ],
+    [
+     3.5,
+     4.1
+    ],
+    [
+     16.4,
+     4.1
+    ],
+    [
+     19.4,
+     0.6
+    ]
+   ],
+   "mask_from": 3.4,
+   "cues": [
+    {
+     "at": 0,
+     "to": 3.3,
+     "text": "This camera can't take pictures."
+    },
+    {
+     "at": 3.8,
+     "to": 7,
+     "text": "Someone is there."
+    },
+    {
+     "at": 7.1,
+     "to": 11,
+     "text": "The camera finds them. The event sensor draws them."
+    },
+    {
+     "at": 11.2,
+     "to": 12.2,
+     "text": "The real camera."
+    },
+    {
+     "at": 12.2,
+     "to": 15.6,
+     "text": "The real camera. Same street."
+    }
+   ],
+   "keys": [
+    {
+     "at": 12.2,
+     "to": 15.6,
+     "key": "space"
+    }
+   ],
+   "keypic": [
+    {
+     "at": 11.2,
+     "to": 16,
+     "key": "Space",
+     "down": [
+      [
+       12.2,
+       15.6
+      ]
+     ]
+    }
+   ],
+   "hold_at": 6.8
+  }
+ ]
+}

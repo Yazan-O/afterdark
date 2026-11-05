@@ -1,0 +1,1958 @@
+{
+  "model": "muse-spark-1.3",
+  "served_on": "Meta API",
+  "started": "2026-11-04T07:18:19+00:00",
+  "moment": "crosswalk",
+  "steps": [
+    {
+      "i": 0,
+      "tool": "scan",
+      "args": {},
+      "reason": "I choose the camera paired with events overview because the camera shows what was in front at k=68 and events show change across the drive to place that moment.",
+      "result": {
+        "seconds": 9.0,
+        "n_frames": 90,
+        "painted": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89
+        ],
+        "grid_cols": 8,
+        "grid_rows": 6,
+        "per_second": [
+          {
+            "second": 0,
+            "k": 5,
+            "events": 11017087,
+            "on_share": 0.52,
+            "camera_mean": 43.0,
+            "grid": [
+              "52222221",
+              "97522334",
+              "88943677",
+              "86732245",
+              "75433345",
+              "34445444"
+            ],
+            "people_boxes": 30
+          },
+          {
+            "second": 1,
+            "k": 15,
+            "events": 13032808,
+            "on_share": 0.51,
+            "camera_mean": 40.8,
+            "grid": [
+              "53112121",
+              "88422343",
+              "99743678",
+              "78733346",
+              "75433334",
+              "34443346"
+            ],
+            "people_boxes": 47
+          },
+          {
+            "second": 2,
+            "k": 25,
+            "events": 13631753,
+            "on_share": 0.51,
+            "camera_mean": 35.3,
+            "grid": [
+              "36224133",
+              "77522356",
+              "98754586",
+              "86623356",
+              "86323234",
+              "65433333"
+            ],
+            "people_boxes": 60
+          },
+          {
+            "second": 3,
+            "k": 35,
+            "events": 13009844,
+            "on_share": 0.52,
+            "camera_mean": 35.4,
+            "grid": [
+              "83223234",
+              "84322347",
+              "99733569",
+              "86512366",
+              "95323335",
+              "43343334"
+            ],
+            "people_boxes": 54
+          },
+          {
+            "second": 4,
+            "k": 45,
+            "events": 9460647,
+            "on_share": 0.55,
+            "camera_mean": 36.0,
+            "grid": [
+              "22111123",
+              "63211235",
+              "88743568",
+              "55311546",
+              "24222223",
+              "12222232"
+            ],
+            "people_boxes": 54
+          },
+          {
+            "second": 5,
+            "k": 55,
+            "events": 6004459,
+            "on_share": 0.55,
+            "camera_mean": 33.8,
+            "grid": [
+              "21111112",
+              "13111223",
+              "36652476",
+              "44151145",
+              "33121123",
+              "12122121"
+            ],
+            "people_boxes": 57
+          },
+          {
+            "second": 6,
+            "k": 65,
+            "events": 5563650,
+            "on_share": 0.56,
+            "camera_mean": 32.2,
+            "grid": [
+              "21111122",
+              "11111222",
+              "13632475",
+              "24521245",
+              "32211123",
+              "33322233"
+            ],
+            "people_boxes": 33
+          },
+          {
+            "second": 7,
+            "k": 75,
+            "events": 7071331,
+            "on_share": 0.55,
+            "camera_mean": 32.0,
+            "grid": [
+              "11112223",
+              "11111224",
+              "34743478",
+              "63521345",
+              "32322234",
+              "13322233"
+            ],
+            "people_boxes": 21
+          },
+          {
+            "second": 8,
+            "k": 85,
+            "events": 9329229,
+            "on_share": 0.53,
+            "camera_mean": 33.2,
+            "grid": [
+              "22223334",
+              "52222335",
+              "98654578",
+              "64522355",
+              "56322234",
+              "44233343"
+            ],
+            "people_boxes": 22
+          }
+        ],
+        "people_frames": 90,
+        "people_first": {
+          "0": [
+            [
+              442.0,
+              204.0,
+              450.0,
+              235.0
+            ],
+            [
+              408.0,
+              208.0,
+              418.0,
+              231.0
+            ],
+            [
+              423.0,
+              207.0,
+              431.0,
+              239.0
+            ]
+          ],
+          "1": [
+            [
+              444.0,
+              204.0,
+              452.0,
+              234.0
+            ],
+            [
+              409.0,
+              206.0,
+              419.0,
+              232.0
+            ],
+            [
+              81.0,
+              194.0,
+              97.0,
+              211.0
+            ],
+            [
+              423.0,
+              204.0,
+              431.0,
+              239.0
+            ]
+          ],
+          "2": [
+            [
+              445.0,
+              204.0,
+              453.0,
+              234.0
+            ],
+            [
+              410.0,
+              207.0,
+              419.0,
+              232.0
+            ],
+            [
+              426.5,
+              206.0,
+              433.5,
+              239.5
+            ],
+            [
+              424.5,
+              204.0,
+              432.5,
+              239.0
+            ]
+          ],
+          "3": [
+            [
+              447.0,
+              204.0,
+              455.0,
+              235.0
+            ],
+            [
+              410.0,
+              207.0,
+              420.0,
+              232.0
+            ],
+            [
+              428.2,
+              205.5,
+              434.8,
+              239.8
+            ],
+            [
+              426.0,
+              204.0,
+              434.0,
+              239.0
+            ]
+          ],
+          "4": [
+            [
+              449.0,
+              203.0,
+              457.0,
+              235.0
+            ],
+            [
+              412.0,
+              206.0,
+              421.0,
+              232.0
+            ],
+            [
+              430.0,
+              205.0,
+              436.0,
+              240.0
+            ],
+            [
+              427.5,
+              204.0,
+              435.5,
+              239.0
+            ]
+          ],
+          "5": [
+            [
+              450.0,
+              203.0,
+              459.0,
+              235.0
+            ],
+            [
+              412.0,
+              206.0,
+              422.0,
+              232.0
+            ],
+            [
+              429.0,
+              204.0,
+              437.0,
+              239.0
+            ]
+          ],
+          "6": [
+            [
+              413.0,
+              205.0,
+              423.0,
+              232.0
+            ],
+            [
+              452.0,
+              203.0,
+              460.0,
+              235.0
+            ]
+          ],
+          "7": [
+            [
+              414.0,
+              207.0,
+              424.0,
+              232.0
+            ],
+            [
+              454.0,
+              203.0,
+              463.0,
+              236.0
+            ]
+          ]
+        }
+      },
+      "seconds": 12.7,
+      "model_seconds": 10.5
+    },
+    {
+      "i": 1,
+      "tool": "look",
+      "args": {
+        "k": 68,
+        "view": "camera"
+      },
+      "reason": "I choose the camera because it shows what was in front of the car when light allowed at the held moment.",
+      "result": {
+        "k": 68,
+        "t_s": 6.8,
+        "view": "camera",
+        "window_ms": 100,
+        "events": 616252,
+        "per_pixel": 2.01,
+        "vs_median": 3.85,
+        "camera_raw_mean": 32.0
+      },
+      "seconds": 7.9,
+      "model_seconds": 7.8
+    },
+    {
+      "i": 2,
+      "tool": "compare",
+      "args": {
+        "concept": "person",
+        "k": 68
+      },
+      "reason": "I choose the camera-backed arithmetic at the held moment because the camera shows who was on the street when light allowed.",
+      "result": {
+        "k": 68,
+        "t_s": 6.8,
+        "concept": "person",
+        "window_ms": 100,
+        "in_both": [
+          {
+            "painted": {
+              "box": [
+                75,
+                200,
+                160,
+                347
+              ],
+              "score": 0.949,
+              "support": {
+                "events": 140817,
+                "per_pixel": 11.27,
+                "vs_median": 21.62,
+                "backing": 208.4,
+                "backed": true
+              }
+            },
+            "camera": {
+              "box": [
+                70,
+                197,
+                154,
+                347
+              ],
+              "score": 0.938,
+              "support": {
+                "events": 133319,
+                "per_pixel": 10.58,
+                "vs_median": 20.3,
+                "backing": 202.1,
+                "backed": true
+              }
+            },
+            "overlap": 0.861
+          }
+        ],
+        "painted_no_camera": [],
+        "camera_no_painted": [
+          {
+            "box": [
+              435,
+              209,
+              449,
+              243
+            ],
+            "score": 0.86,
+            "support": {
+              "events": 3833,
+              "per_pixel": 8.05,
+              "vs_median": 15.45,
+              "backing": 175.9,
+              "backed": true
+            }
+          }
+        ],
+        "counts": {
+          "painted": 1,
+          "camera": 2,
+          "in_both": 1,
+          "painted_no_camera": 0,
+          "camera_no_painted": 1,
+          "left_out_with_events": 1,
+          "invented_no_events": 0
+        }
+      },
+      "seconds": 13.5,
+      "model_seconds": 7.8
+    },
+    {
+      "i": 3,
+      "tool": "look",
+      "args": {
+        "k": 68,
+        "view": "events",
+        "window_ms": 500,
+        "x": 442,
+        "y": 226,
+        "r": 30
+      },
+      "reason": "I choose the events over a wide window because a 300 to 1000 ms window turns a moving object into a sharp outline to settle the missed person.",
+      "result": {
+        "k": 68,
+        "t_s": 6.8,
+        "x": 442,
+        "y": 226,
+        "r": 30,
+        "view": "events",
+        "window_ms": 500,
+        "events": 128188,
+        "per_pixel": 35.61,
+        "vs_median": 12.27,
+        "left_out_here": [
+          {
+            "who": "person",
+            "box": [
+              435,
+              209,
+              449,
+              243
+            ],
+            "events": 19562,
+            "vs_median": 14.16,
+            "held": true
+          }
+        ]
+      },
+      "seconds": 5.6,
+      "model_seconds": 5.4
+    },
+    {
+      "i": 4,
+      "tool": "look",
+      "args": {
+        "k": 68,
+        "view": "camera",
+        "x": 442,
+        "y": 226,
+        "r": 50
+      },
+      "reason": "I choose the camera close-up because it shows what the missed person looks like when light allowed to describe how they face.",
+      "result": {
+        "k": 68,
+        "t_s": 6.8,
+        "x": 442,
+        "y": 226,
+        "r": 50,
+        "view": "camera",
+        "window_ms": 100,
+        "events": 39879,
+        "per_pixel": 3.99,
+        "vs_median": 7.65,
+        "camera_raw_mean": 32.8
+      },
+      "seconds": 18.4,
+      "model_seconds": 18.3
+    },
+    {
+      "i": 5,
+      "tool": "compare",
+      "args": {
+        "concept": "car",
+        "k": 68
+      },
+      "reason": "I choose the camera-backed arithmetic at the held moment because the camera shows cars ahead when light allowed.",
+      "result": {
+        "k": 68,
+        "t_s": 6.8,
+        "concept": "car",
+        "window_ms": 100,
+        "in_both": [
+          {
+            "painted": {
+              "box": [
+                344,
+                214,
+                362,
+                226
+              ],
+              "score": 0.848,
+              "support": {
+                "events": 261,
+                "per_pixel": 1.21,
+                "vs_median": 2.31,
+                "backing": 83.0,
+                "backed": true
+              }
+            },
+            "camera": {
+              "box": [
+                345,
+                209,
+                370,
+                232
+              ],
+              "score": 0.524,
+              "support": {
+                "events": 957,
+                "per_pixel": 1.66,
+                "vs_median": 3.19,
+                "backing": 74.8,
+                "backed": true
+              }
+            },
+            "overlap": 0.348
+          }
+        ],
+        "painted_no_camera": [
+          {
+            "box": [
+              312,
+              211,
+              318,
+              217
+            ],
+            "score": 0.605,
+            "support": {
+              "events": 198,
+              "per_pixel": 5.5,
+              "vs_median": 10.55,
+              "backing": 209.0,
+              "backed": true
+            }
+          },
+          {
+            "box": [
+              319,
+              211,
+              328,
+              219
+            ],
+            "score": 0.597,
+            "support": {
+              "events": 1540,
+              "per_pixel": 21.4,
+              "vs_median": 41.04,
+              "backing": 245.3,
+              "backed": true
+            }
+          },
+          {
+            "box": [
+              331,
+              213,
+              345,
+              223
+            ],
+            "score": 0.801,
+            "support": {
+              "events": 530,
+              "per_pixel": 3.78,
+              "vs_median": 7.26,
+              "backing": 154.5,
+              "backed": true
+            }
+          }
+        ],
+        "camera_no_painted": [
+          {
+            "box": [
+              126,
+              224,
+              166,
+              249
+            ],
+            "score": 0.852,
+            "support": {
+              "events": 64375,
+              "per_pixel": 64.38,
+              "vs_median": 123.49,
+              "backing": 255.0,
+              "backed": true
+            }
+          },
+          {
+            "box": [
+              306,
+              214,
+              330,
+              235
+            ],
+            "score": 0.824,
+            "support": {
+              "events": 716,
+              "per_pixel": 1.42,
+              "vs_median": 2.73,
+              "backing": 86.7,
+              "backed": true
+            }
+          }
+        ],
+        "counts": {
+          "painted": 4,
+          "camera": 3,
+          "in_both": 1,
+          "painted_no_camera": 3,
+          "camera_no_painted": 2,
+          "left_out_with_events": 2,
+          "invented_no_events": 0
+        }
+      },
+      "seconds": 17.9,
+      "model_seconds": 14.6
+    },
+    {
+      "i": 6,
+      "tool": "look",
+      "args": {
+        "k": 68,
+        "view": "events",
+        "window_ms": 500,
+        "x": 146,
+        "y": 236,
+        "r": 60
+      },
+      "reason": "I choose the events over a wide window because a 300 to 1000 ms window turns a moving car into a sharp outline to settle the missed car.",
+      "result": {
+        "k": 68,
+        "t_s": 6.8,
+        "x": 146,
+        "y": 236,
+        "r": 60,
+        "view": "events",
+        "window_ms": 500,
+        "events": 595513,
+        "per_pixel": 41.36,
+        "vs_median": 14.25,
+        "left_out_here": [
+          {
+            "who": "car",
+            "box": [
+              126,
+              224,
+              166,
+              249
+            ],
+            "events": 202145,
+            "vs_median": 69.64,
+            "held": true
+          }
+        ]
+      },
+      "seconds": 8.3,
+      "model_seconds": 8.1
+    },
+    {
+      "i": 7,
+      "tool": "compare",
+      "args": {
+        "concept": "person",
+        "k": 5
+      },
+      "reason": "I choose the camera-backed arithmetic early in the drive because the camera shows who was on the street at the start.",
+      "result": {
+        "k": 5,
+        "t_s": 0.5,
+        "concept": "person",
+        "window_ms": 100,
+        "in_both": [],
+        "painted_no_camera": [
+          {
+            "box": [
+              253,
+              216,
+              269,
+              258
+            ],
+            "score": 0.895,
+            "support": {
+              "events": 1100,
+              "per_pixel": 1.64,
+              "vs_median": 1.26,
+              "backing": 129.9,
+              "backed": false
+            }
+          }
+        ],
+        "camera_no_painted": [
+          {
+            "box": [
+              450,
+              203,
+              459,
+              235
+            ],
+            "score": 0.793,
+            "support": {
+              "events": 3816,
+              "per_pixel": 13.25,
+              "vs_median": 10.19,
+              "backing": 227.4,
+              "backed": true
+            }
+          },
+          {
+            "box": [
+              412,
+              206,
+              422,
+              232
+            ],
+            "score": 0.785,
+            "support": {
+              "events": 1390,
+              "per_pixel": 5.34,
+              "vs_median": 4.11,
+              "backing": 190.8,
+              "backed": true
+            }
+          },
+          {
+            "box": [
+              429,
+              204,
+              437,
+              239
+            ],
+            "score": 0.504,
+            "support": {
+              "events": 1518,
+              "per_pixel": 5.42,
+              "vs_median": 4.17,
+              "backing": 236.0,
+              "backed": true
+            }
+          }
+        ],
+        "counts": {
+          "painted": 1,
+          "camera": 3,
+          "in_both": 0,
+          "painted_no_camera": 1,
+          "camera_no_painted": 3,
+          "left_out_with_events": 3,
+          "invented_no_events": 1
+        }
+      },
+      "seconds": 17.0,
+      "model_seconds": 13.4
+    },
+    {
+      "i": 8,
+      "tool": "compare",
+      "args": {
+        "concept": "person",
+        "k": 35
+      },
+      "reason": "I choose the camera-backed arithmetic mid-drive because the camera shows who was on the street when event activity was high.",
+      "result": {
+        "k": 35,
+        "t_s": 3.5,
+        "concept": "person",
+        "window_ms": 100,
+        "in_both": [],
+        "painted_no_camera": [],
+        "camera_no_painted": [
+          {
+            "box": [
+              476,
+              197,
+              507,
+              274
+            ],
+            "score": 0.93,
+            "support": {
+              "events": 16513,
+              "per_pixel": 6.92,
+              "vs_median": 5.79,
+              "backing": 188.3,
+              "backed": true
+            }
+          },
+          {
+            "box": [
+              425,
+              206,
+              433,
+              230
+            ],
+            "score": 0.723,
+            "support": {
+              "events": 979,
+              "per_pixel": 5.1,
+              "vs_median": 4.27,
+              "backing": 164.6,
+              "backed": true
+            }
+          },
+          {
+            "box": [
+              440,
+              199,
+              453,
+              234
+            ],
+            "score": 0.844,
+            "support": {
+              "events": 2063,
+              "per_pixel": 4.53,
+              "vs_median": 3.79,
+              "backing": 192.2,
+              "backed": true
+            }
+          },
+          {
+            "box": [
+              157,
+              194,
+              184,
+              295
+            ],
+            "score": 0.879,
+            "support": {
+              "events": 11850,
+              "per_pixel": 4.35,
+              "vs_median": 3.63,
+              "backing": 199.2,
+              "backed": true
+            }
+          },
+          {
+            "box": [
+              538,
+              193,
+              557,
+              252
+            ],
+            "score": 0.89,
+            "support": {
+              "events": 10694,
+              "per_pixel": 9.54,
+              "vs_median": 7.98,
+              "backing": 230.4,
+              "backed": true
+            }
+          }
+        ],
+        "counts": {
+          "painted": 0,
+          "camera": 5,
+          "in_both": 0,
+          "painted_no_camera": 0,
+          "camera_no_painted": 5,
+          "left_out_with_events": 5,
+          "invented_no_events": 0
+        }
+      },
+      "seconds": 18.0,
+      "model_seconds": 14.0
+    },
+    {
+      "i": 9,
+      "tool": "compare",
+      "args": {
+        "concept": "person",
+        "k": 85
+      },
+      "reason": "I choose the camera-backed arithmetic late in the drive because the camera shows who was on the street near the end.",
+      "result": {
+        "k": 85,
+        "t_s": 8.5,
+        "concept": "person",
+        "window_ms": 100,
+        "in_both": [
+          {
+            "painted": {
+              "box": [
+                463,
+                206,
+                476,
+                243
+              ],
+              "score": 0.883,
+              "support": {
+                "events": 5181,
+                "per_pixel": 10.77,
+                "vs_median": 11.17,
+                "backing": 228.5,
+                "backed": true
+              }
+            },
+            "camera": {
+              "box": [
+                460,
+                207,
+                474,
+                247
+              ],
+              "score": 0.828,
+              "support": {
+                "events": 6473,
+                "per_pixel": 11.56,
+                "vs_median": 11.98,
+                "backing": 229.7,
+                "backed": true
+              }
+            },
+            "overlap": 0.614
+          },
+          {
+            "painted": {
+              "box": [
+                448,
+                212,
+                455,
+                242
+              ],
+              "score": 0.739,
+              "support": {
+                "events": 1518,
+                "per_pixel": 7.23,
+                "vs_median": 7.49,
+                "backing": 217.7,
+                "backed": true
+              }
+            },
+            "camera": {
+              "box": [
+                443,
+                208,
+                456,
+                240
+              ],
+              "score": 0.652,
+              "support": {
+                "events": 2241,
+                "per_pixel": 5.39,
+                "vs_median": 5.59,
+                "backing": 207.0,
+                "backed": true
+              }
+            },
+            "overlap": 0.456
+          }
+        ],
+        "painted_no_camera": [],
+        "camera_no_painted": [],
+        "counts": {
+          "painted": 2,
+          "camera": 2,
+          "in_both": 2,
+          "painted_no_camera": 0,
+          "camera_no_painted": 0,
+          "left_out_with_events": 0,
+          "invented_no_events": 0
+        }
+      },
+      "seconds": 16.2,
+      "model_seconds": 13.0
+    },
+    {
+      "i": 10,
+      "tool": "look",
+      "args": {
+        "k": 35,
+        "view": "events",
+        "window_ms": 500,
+        "x": 170,
+        "y": 244,
+        "r": 60
+      },
+      "reason": "I choose the events over a wide window because a 300 to 1000 ms window turns a moving person into a sharp outline to settle the missed person.",
+      "result": {
+        "k": 35,
+        "t_s": 3.5,
+        "x": 170,
+        "y": 244,
+        "r": 60,
+        "view": "events",
+        "window_ms": 500,
+        "events": 352295,
+        "per_pixel": 24.46,
+        "vs_median": 4.02,
+        "left_out_here": [
+          {
+            "who": "person",
+            "box": [
+              157,
+              194,
+              184,
+              295
+            ],
+            "events": 61151,
+            "vs_median": 3.68,
+            "held": true
+          }
+        ]
+      },
+      "seconds": 12.7,
+      "model_seconds": 12.5
+    },
+    {
+      "i": 11,
+      "tool": "look",
+      "args": {
+        "k": 35,
+        "view": "camera",
+        "x": 170,
+        "y": 244,
+        "r": 60
+      },
+      "reason": "I choose the camera close-up because it shows what the missed person looks like when light allowed to describe how they face.",
+      "result": {
+        "k": 35,
+        "t_s": 3.5,
+        "x": 170,
+        "y": 244,
+        "r": 60,
+        "view": "camera",
+        "window_ms": 100,
+        "events": 70806,
+        "per_pixel": 4.92,
+        "vs_median": 4.11,
+        "camera_raw_mean": 41.9
+      },
+      "seconds": 9.9,
+      "model_seconds": 9.8
+    },
+    {
+      "i": 12,
+      "tool": "repaint",
+      "args": {
+        "concept": "person",
+        "evidence_window_ms": 500,
+        "k": 35,
+        "note": "a person standing at left beside tram, side-on to the viewer"
+      },
+      "reason": "I choose the events plus camera evidence because wide events hold the outline and the camera shows how the person faces.",
+      "result": {
+        "k": 35,
+        "t_s": 3.5,
+        "note": "a person standing at left beside tram, side-on to the viewer",
+        "version": "r1",
+        "kept_painting": true,
+        "paint_seconds": 10.6,
+        "aimed_at": {
+          "who": "person",
+          "box": [
+            157,
+            194,
+            184,
+            295
+          ]
+        },
+        "evidence_window_ms": 500,
+        "changes": {
+          "person": {
+            "before": {
+              "painted": 0,
+              "camera": 5,
+              "in_both": 0,
+              "painted_no_camera": 0,
+              "camera_no_painted": 5,
+              "left_out_with_events": 5,
+              "invented_no_events": 0
+            },
+            "after": {
+              "painted": 1,
+              "camera": 5,
+              "in_both": 1,
+              "painted_no_camera": 0,
+              "camera_no_painted": 4,
+              "left_out_with_events": 4,
+              "invented_no_events": 0
+            },
+            "restored": [
+              [
+                157,
+                194,
+                184,
+                295
+              ]
+            ],
+            "restored_with_events": 1,
+            "left_out_change": -1,
+            "invented_change": 0,
+            "helped": true
+          }
+        },
+        "helped": true,
+        "restored": 1,
+        "restored_with_events": 1
+      },
+      "seconds": 19.5,
+      "model_seconds": 5.3
+    },
+    {
+      "i": 13,
+      "tool": "report",
+      "args": {
+        "finding": "At 6.8 seconds the camera holds 2 people and the painting shows 1 of them. At 6.8 seconds the camera holds 3 cars and the painting shows 1 of them with 957 events for that 1. At 0.5 seconds the camera holds 3 people and the painting shows 0 of them. At 3.5 seconds the camera holds 5 people and the painting shows 0 of them. At 8.5 seconds the camera holds 2 people and the painting shows 2 of them. After the rework with 500 ms at 3.5 seconds 1 person came back with 61151 events for that 1.",
+        "invented": "At 6.8 seconds 1 person was left out with 3833 events for that 1. At 6.8 seconds 2 cars were left out including 1 with 64375 events for that 1. At 0.5 seconds 1 extra person was shown with 1100 events for that 1. At 3.5 seconds 5 people were left out with 4 still left out after the rework with 500 ms.",
+        "view": "events+camera"
+      },
+      "reason": "I chose events plus camera because wide events hold outlines and the camera shows facing when light allows.",
+      "result": {
+        "finding": "At 6.8 seconds the camera holds 2 people and the painting shows 1 of them. At 6.8 seconds the camera holds 3 cars and the painting shows 1 of them with 957 events for that 1. At 0.5 seconds the camera holds 3 people and the painting shows 0 of them. At 3.5 seconds the camera holds 5 people and the painting shows 0 of them. At 8.5 seconds the camera holds 2 people and the painting shows 2 of them. After the rework with 500 ms at 3.5 seconds 1 person came back with 61151 events for that 1.",
+        "view": "events+camera",
+        "invented": "At 6.8 seconds 1 person was left out with 3833 events for that 1. At 6.8 seconds 2 cars were left out including 1 with 64375 events for that 1. At 0.5 seconds 1 extra person was shown with 1100 events for that 1. At 3.5 seconds 5 people were left out with 4 still left out after the rework with 500 ms.",
+        "auto": false,
+        "verdict": {
+          "frames_checked": 4,
+          "frames": [
+            5,
+            35,
+            68,
+            85
+          ],
+          "found": 15,
+          "left_out": 11,
+          "invented": 4,
+          "invented_no_events": 1,
+          "repaints": 1,
+          "repaints_helped": 1,
+          "restored": 1,
+          "sam_calls": 11,
+          "paint_calls": 1
+        },
+        "sightings": [
+          {
+            "who": "person",
+            "k": 68,
+            "t_s": 6.8,
+            "box": [
+              70,
+              197,
+              154,
+              347
+            ],
+            "score": 0.938,
+            "from": [
+              "camera"
+            ],
+            "events": 133319,
+            "vs_median": 20.3,
+            "painted": true
+          },
+          {
+            "who": "person",
+            "k": 68,
+            "t_s": 6.8,
+            "box": [
+              435,
+              209,
+              449,
+              243
+            ],
+            "score": 0.86,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 3833,
+            "vs_median": 15.45,
+            "painted": false,
+            "wide_ms": 500,
+            "wide_events": 19562,
+            "wide_vs_median": 14.16
+          },
+          {
+            "who": "car",
+            "k": 68,
+            "t_s": 6.8,
+            "box": [
+              345,
+              209,
+              370,
+              232
+            ],
+            "score": 0.524,
+            "from": [
+              "camera"
+            ],
+            "events": 957,
+            "vs_median": 3.19,
+            "painted": true
+          },
+          {
+            "who": "car",
+            "k": 68,
+            "t_s": 6.8,
+            "box": [
+              126,
+              224,
+              166,
+              249
+            ],
+            "score": 0.852,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 64375,
+            "vs_median": 123.49,
+            "painted": false,
+            "wide_ms": 500,
+            "wide_events": 202145,
+            "wide_vs_median": 69.64
+          },
+          {
+            "who": "car",
+            "k": 68,
+            "t_s": 6.8,
+            "box": [
+              306,
+              214,
+              330,
+              235
+            ],
+            "score": 0.824,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 716,
+            "vs_median": 2.73,
+            "painted": false
+          },
+          {
+            "who": "person",
+            "k": 5,
+            "t_s": 0.5,
+            "box": [
+              450,
+              203,
+              459,
+              235
+            ],
+            "score": 0.793,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 3816,
+            "vs_median": 10.19,
+            "painted": false
+          },
+          {
+            "who": "person",
+            "k": 5,
+            "t_s": 0.5,
+            "box": [
+              412,
+              206,
+              422,
+              232
+            ],
+            "score": 0.785,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 1390,
+            "vs_median": 4.11,
+            "painted": false
+          },
+          {
+            "who": "person",
+            "k": 5,
+            "t_s": 0.5,
+            "box": [
+              429,
+              204,
+              437,
+              239
+            ],
+            "score": 0.504,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 1518,
+            "vs_median": 4.17,
+            "painted": false
+          },
+          {
+            "who": "person",
+            "k": 35,
+            "t_s": 3.5,
+            "box": [
+              476,
+              197,
+              507,
+              274
+            ],
+            "score": 0.93,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 16513,
+            "vs_median": 5.79,
+            "painted": false
+          },
+          {
+            "who": "person",
+            "k": 35,
+            "t_s": 3.5,
+            "box": [
+              425,
+              206,
+              433,
+              230
+            ],
+            "score": 0.723,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 979,
+            "vs_median": 4.27,
+            "painted": false
+          },
+          {
+            "who": "person",
+            "k": 35,
+            "t_s": 3.5,
+            "box": [
+              440,
+              199,
+              453,
+              234
+            ],
+            "score": 0.844,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 2063,
+            "vs_median": 3.79,
+            "painted": false
+          },
+          {
+            "who": "person",
+            "k": 35,
+            "t_s": 3.5,
+            "box": [
+              157,
+              194,
+              184,
+              295
+            ],
+            "score": 0.879,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 11850,
+            "vs_median": 3.63,
+            "painted": false,
+            "wide_ms": 500,
+            "wide_events": 61151,
+            "wide_vs_median": 3.68,
+            "restored_by": "r1"
+          },
+          {
+            "who": "person",
+            "k": 35,
+            "t_s": 3.5,
+            "box": [
+              538,
+              193,
+              557,
+              252
+            ],
+            "score": 0.89,
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 10694,
+            "vs_median": 7.98,
+            "painted": false
+          },
+          {
+            "who": "person",
+            "k": 85,
+            "t_s": 8.5,
+            "box": [
+              460,
+              207,
+              474,
+              247
+            ],
+            "score": 0.828,
+            "from": [
+              "camera"
+            ],
+            "events": 6473,
+            "vs_median": 11.98,
+            "painted": true
+          },
+          {
+            "who": "person",
+            "k": 85,
+            "t_s": 8.5,
+            "box": [
+              443,
+              208,
+              456,
+              240
+            ],
+            "score": 0.652,
+            "from": [
+              "camera"
+            ],
+            "events": 2241,
+            "vs_median": 5.59,
+            "painted": true
+          }
+        ],
+        "invented_list": [
+          {
+            "who": "car",
+            "k": 68,
+            "t_s": 6.8,
+            "box": [
+              312,
+              211,
+              318,
+              217
+            ],
+            "score": 0.605,
+            "events": 198,
+            "vs_median": 10.55,
+            "events_backed": true
+          },
+          {
+            "who": "car",
+            "k": 68,
+            "t_s": 6.8,
+            "box": [
+              319,
+              211,
+              328,
+              219
+            ],
+            "score": 0.597,
+            "events": 1540,
+            "vs_median": 41.04,
+            "events_backed": true
+          },
+          {
+            "who": "car",
+            "k": 68,
+            "t_s": 6.8,
+            "box": [
+              331,
+              213,
+              345,
+              223
+            ],
+            "score": 0.801,
+            "events": 530,
+            "vs_median": 7.26,
+            "events_backed": true
+          },
+          {
+            "who": "person",
+            "k": 5,
+            "t_s": 0.5,
+            "box": [
+              253,
+              216,
+              269,
+              258
+            ],
+            "score": 0.895,
+            "events": 1100,
+            "vs_median": 1.26,
+            "events_backed": false
+          }
+        ],
+        "drive_list": [
+          {
+            "who": "person",
+            "t_s": 0.5,
+            "k": 5,
+            "box": [
+              253,
+              216,
+              269,
+              258
+            ],
+            "from": [],
+            "events": 1100,
+            "painting": "invented"
+          },
+          {
+            "who": "person",
+            "t_s": 0.5,
+            "k": 5,
+            "box": [
+              412,
+              206,
+              422,
+              232
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 1390,
+            "painting": "left out"
+          },
+          {
+            "who": "person",
+            "t_s": 0.5,
+            "k": 5,
+            "box": [
+              429,
+              204,
+              437,
+              239
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 1518,
+            "painting": "left out"
+          },
+          {
+            "who": "person",
+            "t_s": 0.5,
+            "k": 5,
+            "box": [
+              450,
+              203,
+              459,
+              235
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 3816,
+            "painting": "left out"
+          },
+          {
+            "who": "person",
+            "t_s": 3.5,
+            "k": 35,
+            "box": [
+              157,
+              194,
+              184,
+              295
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 11850,
+            "painting": "left out, brought back by repaint r1"
+          },
+          {
+            "who": "person",
+            "t_s": 3.5,
+            "k": 35,
+            "box": [
+              425,
+              206,
+              433,
+              230
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 979,
+            "painting": "left out"
+          },
+          {
+            "who": "person",
+            "t_s": 3.5,
+            "k": 35,
+            "box": [
+              440,
+              199,
+              453,
+              234
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 2063,
+            "painting": "left out"
+          },
+          {
+            "who": "person",
+            "t_s": 3.5,
+            "k": 35,
+            "box": [
+              476,
+              197,
+              507,
+              274
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 16513,
+            "painting": "left out"
+          },
+          {
+            "who": "person",
+            "t_s": 3.5,
+            "k": 35,
+            "box": [
+              538,
+              193,
+              557,
+              252
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 10694,
+            "painting": "left out"
+          },
+          {
+            "who": "car",
+            "t_s": 6.8,
+            "k": 68,
+            "box": [
+              126,
+              224,
+              166,
+              249
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 64375,
+            "painting": "left out"
+          },
+          {
+            "who": "car",
+            "t_s": 6.8,
+            "k": 68,
+            "box": [
+              306,
+              214,
+              330,
+              235
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 716,
+            "painting": "left out"
+          },
+          {
+            "who": "car",
+            "t_s": 6.8,
+            "k": 68,
+            "box": [
+              312,
+              211,
+              318,
+              217
+            ],
+            "from": [],
+            "events": 198,
+            "painting": "invented"
+          },
+          {
+            "who": "car",
+            "t_s": 6.8,
+            "k": 68,
+            "box": [
+              319,
+              211,
+              328,
+              219
+            ],
+            "from": [],
+            "events": 1540,
+            "painting": "invented"
+          },
+          {
+            "who": "car",
+            "t_s": 6.8,
+            "k": 68,
+            "box": [
+              331,
+              213,
+              345,
+              223
+            ],
+            "from": [],
+            "events": 530,
+            "painting": "invented"
+          },
+          {
+            "who": "car",
+            "t_s": 6.8,
+            "k": 68,
+            "box": [
+              345,
+              209,
+              370,
+              232
+            ],
+            "from": [
+              "camera"
+            ],
+            "events": 957,
+            "painting": "painted"
+          },
+          {
+            "who": "person",
+            "t_s": 6.8,
+            "k": 68,
+            "box": [
+              70,
+              197,
+              154,
+              347
+            ],
+            "from": [
+              "camera"
+            ],
+            "events": 133319,
+            "painting": "painted"
+          },
+          {
+            "who": "person",
+            "t_s": 6.8,
+            "k": 68,
+            "box": [
+              435,
+              209,
+              449,
+              243
+            ],
+            "from": [
+              "camera",
+              "events"
+            ],
+            "events": 3833,
+            "painting": "left out"
+          },
+          {
+            "who": "person",
+            "t_s": 8.5,
+            "k": 85,
+            "box": [
+              443,
+              208,
+              456,
+              240
+            ],
+            "from": [
+              "camera"
+            ],
+            "events": 2241,
+            "painting": "painted"
+          },
+          {
+            "who": "person",
+            "t_s": 8.5,
+            "k": 85,
+            "box": [
+              460,
+              207,
+              474,
+              247
+            ],
+            "from": [
+              "camera"
+            ],
+            "events": 6473,
+            "painting": "painted"
+          }
+        ],
+        "lines": [
+          "0.5 s, person at [253, 216, 269, 258]: only in the painting, the camera has no match; 1100 events in that box over 100 ms.",
+          "0.5 s, person at [412, 206, 422, 232]: from the camera and the events, 1390 events over 100 ms; painting: left out.",
+          "0.5 s, person at [429, 204, 437, 239]: from the camera and the events, 1518 events over 100 ms; painting: left out.",
+          "0.5 s, person at [450, 203, 459, 235]: from the camera and the events, 3816 events over 100 ms; painting: left out.",
+          "3.5 s, person at [157, 194, 184, 295]: from the camera and the events, 11850 events over 100 ms; painting: left out, brought back by repaint r1.",
+          "3.5 s, person at [425, 206, 433, 230]: from the camera and the events, 979 events over 100 ms; painting: left out.",
+          "3.5 s, person at [440, 199, 453, 234]: from the camera and the events, 2063 events over 100 ms; painting: left out.",
+          "3.5 s, person at [476, 197, 507, 274]: from the camera and the events, 16513 events over 100 ms; painting: left out.",
+          "3.5 s, person at [538, 193, 557, 252]: from the camera and the events, 10694 events over 100 ms; painting: left out.",
+          "6.8 s, car at [126, 224, 166, 249]: from the camera and the events, 64375 events over 100 ms; painting: left out.",
+          "6.8 s, car at [306, 214, 330, 235]: from the camera and the events, 716 events over 100 ms; painting: left out.",
+          "6.8 s, car at [312, 211, 318, 217]: only in the painting, the camera has no match; 198 events in that box over 100 ms.",
+          "6.8 s, car at [319, 211, 328, 219]: only in the painting, the camera has no match; 1540 events in that box over 100 ms.",
+          "6.8 s, car at [331, 213, 345, 223]: only in the painting, the camera has no match; 530 events in that box over 100 ms.",
+          "6.8 s, car at [345, 209, 370, 232]: from the camera, 957 events over 100 ms; painting: painted.",
+          "6.8 s, person at [70, 197, 154, 347]: from the camera, 133319 events over 100 ms; painting: painted.",
+          "6.8 s, person at [435, 209, 449, 243]: from the camera and the events, 3833 events over 100 ms; painting: left out.",
+          "8.5 s, person at [443, 208, 456, 240]: from the camera, 2241 events over 100 ms; painting: painted.",
+          "8.5 s, person at [460, 207, 474, 247]: from the camera, 6473 events over 100 ms; painting: painted."
+        ]
+      },
+      "seconds": 49.3,
+      "model_seconds": 49.3
+    }
+  ],
+  "held": 68,
+  "seconds": 226.9
+}
