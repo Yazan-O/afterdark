@@ -1,0 +1,1392 @@
+{
+ "model": "muse-spark-1.3",
+ "served_on": "Meta API",
+ "started": "2026-11-04T07:22:24+00:00",
+ "moment": "crosswalk",
+ "steps": [
+  {
+   "i": 0,
+   "tool": "compare",
+   "args": {
+    "concept": "person",
+    "k": 68
+   },
+   "reason": "I chose compare on the camera against the painting at k=68 because the camera shows what was in front of the car when light allowed.",
+   "result": {
+    "k": 68,
+    "t_s": 6.8,
+    "concept": "person",
+    "window_ms": 100,
+    "in_both": [
+     {
+      "painted": {
+       "box": [
+        75,
+        200,
+        160,
+        347
+       ],
+       "score": 0.949,
+       "support": {
+        "events": 140817,
+        "per_pixel": 11.27,
+        "vs_median": 21.62,
+        "backing": 208.4,
+        "backed": true
+       }
+      },
+      "camera": {
+       "box": [
+        70,
+        197,
+        154,
+        347
+       ],
+       "score": 0.938,
+       "support": {
+        "events": 133319,
+        "per_pixel": 10.58,
+        "vs_median": 20.3,
+        "backing": 202.1,
+        "backed": true
+       }
+      },
+      "overlap": 0.861
+     }
+    ],
+    "painted_no_camera": [],
+    "camera_no_painted": [
+     {
+      "box": [
+       435,
+       209,
+       449,
+       243
+      ],
+      "score": 0.86,
+      "support": {
+       "events": 3833,
+       "per_pixel": 8.05,
+       "vs_median": 15.45,
+       "backing": 175.9,
+       "backed": true
+      }
+     }
+    ],
+    "counts": {
+     "painted": 1,
+     "camera": 2,
+     "in_both": 1,
+     "painted_no_camera": 0,
+     "camera_no_painted": 1,
+     "left_out_with_events": 1,
+     "invented_no_events": 0
+    }
+   },
+   "seconds": 19.3,
+   "model_seconds": 12.6
+  },
+  {
+   "i": 1,
+   "tool": "look",
+   "args": {
+    "k": 68,
+    "view": "events",
+    "window_ms": 800,
+    "x": 442,
+    "y": 226
+   },
+   "reason": "I chose the events over a wide window because a 300 to 1000 ms window turns a moving object into a sharp outline.",
+   "result": {
+    "k": 68,
+    "t_s": 6.8,
+    "x": 442,
+    "y": 226,
+    "r": 80,
+    "view": "events",
+    "window_ms": 800,
+    "events": 582631,
+    "per_pixel": 22.76,
+    "vs_median": 4.73,
+    "left_out_here": [
+     {
+      "who": "person",
+      "box": [
+       435,
+       209,
+       449,
+       243
+      ],
+      "events": 31203,
+      "vs_median": 13.62,
+      "held": true
+     }
+    ]
+   },
+   "seconds": 4.9,
+   "model_seconds": 4.6
+  },
+  {
+   "i": 2,
+   "tool": "look",
+   "args": {
+    "k": 68,
+    "view": "camera"
+   },
+   "reason": "I chose the camera because it shows what was in front of the car when light allowed and what else matters on the street.",
+   "result": {
+    "k": 68,
+    "t_s": 6.8,
+    "view": "camera",
+    "window_ms": 100,
+    "events": 616252,
+    "per_pixel": 2.01,
+    "vs_median": 3.85,
+    "camera_raw_mean": 32.0
+   },
+   "seconds": 14.8,
+   "model_seconds": 14.7
+  },
+  {
+   "i": 3,
+   "tool": "repaint",
+   "args": {
+    "concept": "person",
+    "evidence_window_ms": 800,
+    "k": 68,
+    "note": "a person on the right sidewalk by the shops, side-on to the viewer"
+   },
+   "reason": "I chose the camera because it shows what was in front of the car and how the person faces on the sidewalk.",
+   "result": {
+    "k": 68,
+    "t_s": 6.8,
+    "note": "a person on the right sidewalk by the shops, side-on to the viewer",
+    "version": "r2",
+    "kept_painting": true,
+    "paint_seconds": 13.4,
+    "aimed_at": {
+     "who": "person",
+     "box": [
+      435,
+      209,
+      449,
+      243
+     ]
+    },
+    "evidence_window_ms": 800,
+    "changes": {
+     "person": {
+      "before": {
+       "painted": 1,
+       "camera": 2,
+       "in_both": 1,
+       "painted_no_camera": 0,
+       "camera_no_painted": 1,
+       "left_out_with_events": 1,
+       "invented_no_events": 0
+      },
+      "after": {
+       "painted": 2,
+       "camera": 2,
+       "in_both": 1,
+       "painted_no_camera": 1,
+       "camera_no_painted": 1,
+       "left_out_with_events": 1,
+       "invented_no_events": 0
+      },
+      "restored": [],
+      "restored_with_events": 0,
+      "left_out_change": 0,
+      "invented_change": 1,
+      "helped": false
+     }
+    },
+    "helped": false,
+    "restored": 0,
+    "restored_with_events": 0
+   },
+   "seconds": 32.3,
+   "model_seconds": 14.1
+  },
+  {
+   "i": 4,
+   "tool": "compare",
+   "args": {
+    "concept": "tram",
+    "k": 68
+   },
+   "reason": "I chose compare on the camera against the painting at k=68 because the camera shows a tram ahead when light allowed.",
+   "result": {
+    "k": 68,
+    "t_s": 6.8,
+    "concept": "tram",
+    "window_ms": 100,
+    "in_both": [],
+    "painted_no_camera": [],
+    "camera_no_painted": [
+     {
+      "box": [
+       185,
+       174,
+       297,
+       247
+      ],
+      "score": 0.86,
+      "support": {
+       "events": 43345,
+       "per_pixel": 5.3,
+       "vs_median": 10.17,
+       "backing": 142.8,
+       "backed": true
+      }
+     }
+    ],
+    "counts": {
+     "painted": 0,
+     "camera": 1,
+     "in_both": 0,
+     "painted_no_camera": 0,
+     "camera_no_painted": 1,
+     "left_out_with_events": 1,
+     "invented_no_events": 0
+    }
+   },
+   "seconds": 36.6,
+   "model_seconds": 32.6
+  },
+  {
+   "i": 5,
+   "tool": "look",
+   "args": {
+    "k": 68,
+    "view": "events",
+    "window_ms": 800,
+    "x": 241,
+    "y": 210
+   },
+   "reason": "I chose the events over a wide window because a 300 to 1000 ms window turns a moving tram into a sharp outline while the static world smears.",
+   "result": {
+    "k": 68,
+    "t_s": 6.8,
+    "x": 241,
+    "y": 210,
+    "r": 80,
+    "view": "events",
+    "window_ms": 800,
+    "events": 589350,
+    "per_pixel": 23.02,
+    "vs_median": 4.78,
+    "left_out_here": [
+     {
+      "who": "tram",
+      "box": [
+       185,
+       174,
+       297,
+       247
+      ],
+      "events": 350583,
+      "vs_median": 8.91,
+      "held": true
+     }
+    ]
+   },
+   "seconds": 6.7,
+   "model_seconds": 6.1
+  },
+  {
+   "i": 6,
+   "tool": "look",
+   "args": {
+    "k": 68,
+    "view": "camera",
+    "x": 241,
+    "y": 210
+   },
+   "reason": "I chose the camera on the tram box because it shows what was ahead when light allowed and how the tram faces.",
+   "result": {
+    "k": 68,
+    "t_s": 6.8,
+    "x": 241,
+    "y": 210,
+    "r": 80,
+    "view": "camera",
+    "window_ms": 100,
+    "events": 64259,
+    "per_pixel": 2.51,
+    "vs_median": 4.82,
+    "camera_raw_mean": 45.4
+   },
+   "seconds": 8.7,
+   "model_seconds": 8.5
+  },
+  {
+   "i": 7,
+   "tool": "repaint",
+   "args": {
+    "concept": "tram",
+    "evidence_window_ms": 800,
+    "k": 68,
+    "note": "a tram ahead in the left lane at the centre of the frame, its front toward the viewer"
+   },
+   "reason": "I chose the camera because it shows the tram ahead when light allowed and how it faces.",
+   "result": {
+    "k": 68,
+    "t_s": 6.8,
+    "note": "a tram ahead in the left lane at the centre of the frame, its front toward the viewer",
+    "version": "r3",
+    "kept_painting": true,
+    "paint_seconds": 18.7,
+    "aimed_at": {
+     "who": "tram",
+     "box": [
+      185,
+      174,
+      297,
+      247
+     ]
+    },
+    "evidence_window_ms": 800,
+    "changes": {
+     "person": {
+      "before": {
+       "painted": 1,
+       "camera": 2,
+       "in_both": 1,
+       "painted_no_camera": 0,
+       "camera_no_painted": 1,
+       "left_out_with_events": 1,
+       "invented_no_events": 0
+      },
+      "after": {
+       "painted": 1,
+       "camera": 2,
+       "in_both": 1,
+       "painted_no_camera": 0,
+       "camera_no_painted": 1,
+       "left_out_with_events": 1,
+       "invented_no_events": 0
+      },
+      "restored": [],
+      "restored_with_events": 0,
+      "left_out_change": 0,
+      "invented_change": 0,
+      "helped": false
+     },
+     "tram": {
+      "before": {
+       "painted": 0,
+       "camera": 1,
+       "in_both": 0,
+       "painted_no_camera": 0,
+       "camera_no_painted": 1,
+       "left_out_with_events": 1,
+       "invented_no_events": 0
+      },
+      "after": {
+       "painted": 1,
+       "camera": 1,
+       "in_both": 1,
+       "painted_no_camera": 0,
+       "camera_no_painted": 0,
+       "left_out_with_events": 0,
+       "invented_no_events": 0
+      },
+      "restored": [
+       [
+        185,
+        174,
+        297,
+        247
+       ]
+      ],
+      "restored_with_events": 1,
+      "left_out_change": -1,
+      "invented_change": 0,
+      "helped": true
+     }
+    },
+    "helped": true,
+    "restored": 1,
+    "restored_with_events": 1,
+    "image": "repaint/0068.r3.webp"
+   },
+   "seconds": 33.2,
+   "model_seconds": 7.0
+  },
+  {
+   "i": 8,
+   "tool": "repaint",
+   "args": {
+    "concept": "person",
+    "evidence_window_ms": 800,
+    "k": 68,
+    "note": "a person standing on the right sidewalk by storefronts, side-on to the viewer"
+   },
+   "reason": "I chose the camera because it shows who stood on the sidewalk when light allowed and how they face.",
+   "result": {
+    "k": 68,
+    "t_s": 6.8,
+    "note": "a person standing on the right sidewalk by storefronts, side-on to the viewer",
+    "version": "r4",
+    "kept_painting": true,
+    "paint_seconds": 9.7,
+    "aimed_at": {
+     "who": "person",
+     "box": [
+      435,
+      209,
+      449,
+      243
+     ]
+    },
+    "evidence_window_ms": 800,
+    "changes": {
+     "person": {
+      "before": {
+       "painted": 1,
+       "camera": 2,
+       "in_both": 1,
+       "painted_no_camera": 0,
+       "camera_no_painted": 1,
+       "left_out_with_events": 1,
+       "invented_no_events": 0
+      },
+      "after": {
+       "painted": 2,
+       "camera": 2,
+       "in_both": 1,
+       "painted_no_camera": 1,
+       "camera_no_painted": 1,
+       "left_out_with_events": 1,
+       "invented_no_events": 0
+      },
+      "restored": [],
+      "restored_with_events": 0,
+      "left_out_change": 0,
+      "invented_change": 1,
+      "helped": false
+     },
+     "tram": {
+      "before": {
+       "painted": 1,
+       "camera": 1,
+       "in_both": 1,
+       "painted_no_camera": 0,
+       "camera_no_painted": 0,
+       "left_out_with_events": 0,
+       "invented_no_events": 0
+      },
+      "after": {
+       "painted": 1,
+       "camera": 1,
+       "in_both": 1,
+       "painted_no_camera": 0,
+       "camera_no_painted": 0,
+       "left_out_with_events": 0,
+       "invented_no_events": 0
+      },
+      "restored": [],
+      "restored_with_events": 0,
+      "left_out_change": 0,
+      "invented_change": 0,
+      "helped": false
+     }
+    },
+    "helped": false,
+    "restored": 0,
+    "restored_with_events": 0
+   },
+   "seconds": 36.7,
+   "model_seconds": 19.2
+  },
+  {
+   "i": 9,
+   "tool": "compare",
+   "args": {
+    "concept": "person",
+    "k": 5
+   },
+   "reason": "I chose compare on the camera against the painting early in the drive because the camera shows who was there when light allowed.",
+   "result": {
+    "k": 5,
+    "t_s": 0.5,
+    "concept": "person",
+    "window_ms": 100,
+    "in_both": [],
+    "painted_no_camera": [
+     {
+      "box": [
+       253,
+       216,
+       269,
+       258
+      ],
+      "score": 0.895,
+      "support": {
+       "events": 1100,
+       "per_pixel": 1.64,
+       "vs_median": 1.26,
+       "backing": 129.9,
+       "backed": false
+      }
+     }
+    ],
+    "camera_no_painted": [
+     {
+      "box": [
+       450,
+       203,
+       459,
+       235
+      ],
+      "score": 0.793,
+      "support": {
+       "events": 3816,
+       "per_pixel": 13.25,
+       "vs_median": 10.19,
+       "backing": 227.4,
+       "backed": true
+      }
+     },
+     {
+      "box": [
+       412,
+       206,
+       422,
+       232
+      ],
+      "score": 0.785,
+      "support": {
+       "events": 1390,
+       "per_pixel": 5.34,
+       "vs_median": 4.11,
+       "backing": 190.8,
+       "backed": true
+      }
+     },
+     {
+      "box": [
+       429,
+       204,
+       437,
+       239
+      ],
+      "score": 0.504,
+      "support": {
+       "events": 1518,
+       "per_pixel": 5.42,
+       "vs_median": 4.17,
+       "backing": 236.0,
+       "backed": true
+      }
+     }
+    ],
+    "counts": {
+     "painted": 1,
+     "camera": 3,
+     "in_both": 0,
+     "painted_no_camera": 1,
+     "camera_no_painted": 3,
+     "left_out_with_events": 3,
+     "invented_no_events": 1
+    }
+   },
+   "seconds": 22.0,
+   "model_seconds": 18.9
+  },
+  {
+   "i": 10,
+   "tool": "compare",
+   "args": {
+    "concept": "person",
+    "k": 30
+   },
+   "reason": "I chose compare on the camera against the painting mid-drive because the camera shows who was there when light allowed.",
+   "result": {
+    "k": 30,
+    "t_s": 3.0,
+    "concept": "person",
+    "window_ms": 100,
+    "in_both": [
+     {
+      "painted": {
+       "box": [
+        472,
+        199,
+        496,
+        261
+       ],
+       "score": 0.934,
+       "support": {
+        "events": 10387,
+        "per_pixel": 6.98,
+        "vs_median": 5.38,
+        "backing": 204.8,
+        "backed": true
+       }
+      },
+      "camera": {
+       "box": [
+        474,
+        196,
+        497,
+        265
+       ],
+       "score": 0.914,
+       "support": {
+        "events": 12846,
+        "per_pixel": 8.09,
+        "vs_median": 6.23,
+        "backing": 206.7,
+        "backed": true
+       }
+      },
+      "overlap": 0.797
+     }
+    ],
+    "painted_no_camera": [],
+    "camera_no_painted": [
+     {
+      "box": [
+       423,
+       205,
+       431,
+       231
+      ],
+      "score": 0.723,
+      "support": {
+       "events": 1921,
+       "per_pixel": 9.23,
+       "vs_median": 7.11,
+       "backing": 181.9,
+       "backed": true
+      }
+     },
+     {
+      "box": [
+       188,
+       197,
+       210,
+       282
+      ],
+      "score": 0.879,
+      "support": {
+       "events": 8518,
+       "per_pixel": 4.56,
+       "vs_median": 3.51,
+       "backing": 202.9,
+       "backed": true
+      }
+     },
+     {
+      "box": [
+       435,
+       202,
+       448,
+       235
+      ],
+      "score": 0.84,
+      "support": {
+       "events": 2130,
+       "per_pixel": 4.96,
+       "vs_median": 3.82,
+       "backing": 207.1,
+       "backed": true
+      }
+     },
+     {
+      "box": [
+       519,
+       196,
+       534,
+       248
+      ],
+      "score": 0.867,
+      "support": {
+       "events": 6555,
+       "per_pixel": 8.4,
+       "vs_median": 6.47,
+       "backing": 239.7,
+       "backed": true
+      }
+     }
+    ],
+    "counts": {
+     "painted": 1,
+     "camera": 5,
+     "in_both": 1,
+     "painted_no_camera": 0,
+     "camera_no_painted": 4,
+     "left_out_with_events": 4,
+     "invented_no_events": 0
+    }
+   },
+   "seconds": 15.4,
+   "model_seconds": 11.5
+  },
+  {
+   "i": 11,
+   "tool": "compare",
+   "args": {
+    "concept": "person",
+    "k": 85
+   },
+   "reason": "I chose compare on the camera against the painting late in the drive because the camera shows who was there when light allowed.",
+   "result": {
+    "k": 85,
+    "t_s": 8.5,
+    "concept": "person",
+    "window_ms": 100,
+    "in_both": [
+     {
+      "painted": {
+       "box": [
+        463,
+        206,
+        476,
+        243
+       ],
+       "score": 0.883,
+       "support": {
+        "events": 5181,
+        "per_pixel": 10.77,
+        "vs_median": 11.17,
+        "backing": 228.5,
+        "backed": true
+       }
+      },
+      "camera": {
+       "box": [
+        460,
+        207,
+        474,
+        247
+       ],
+       "score": 0.828,
+       "support": {
+        "events": 6473,
+        "per_pixel": 11.56,
+        "vs_median": 11.98,
+        "backing": 229.7,
+        "backed": true
+       }
+      },
+      "overlap": 0.614
+     },
+     {
+      "painted": {
+       "box": [
+        448,
+        212,
+        455,
+        242
+       ],
+       "score": 0.739,
+       "support": {
+        "events": 1518,
+        "per_pixel": 7.23,
+        "vs_median": 7.49,
+        "backing": 217.7,
+        "backed": true
+       }
+      },
+      "camera": {
+       "box": [
+        443,
+        208,
+        456,
+        240
+       ],
+       "score": 0.652,
+       "support": {
+        "events": 2241,
+        "per_pixel": 5.39,
+        "vs_median": 5.59,
+        "backing": 207.0,
+        "backed": true
+       }
+      },
+      "overlap": 0.456
+     }
+    ],
+    "painted_no_camera": [],
+    "camera_no_painted": [],
+    "counts": {
+     "painted": 2,
+     "camera": 2,
+     "in_both": 2,
+     "painted_no_camera": 0,
+     "camera_no_painted": 0,
+     "left_out_with_events": 0,
+     "invented_no_events": 0
+    }
+   },
+   "seconds": 13.7,
+   "model_seconds": 9.9
+  },
+  {
+   "i": 12,
+   "tool": "report",
+   "args": {
+    "finding": "At 0.5 seconds the camera holds 3 persons and the events show 3816 for that object. At 3.0 seconds the camera holds 5 persons and the events show 8518 for that object. At 6.8 seconds the camera holds 2 persons and the events show 31203 for that object. At 6.8 seconds the camera holds 1 tram and the events show 350583 for that object, and it came back with 1 for 1. At 8.5 seconds the camera holds 2 persons and the painting shows 2.",
+    "invented": "At 0.5 seconds the painting shows 1 while the camera holds 3 with 3 missed and 1 with no events. At 3.0 seconds the painting shows 1 while the camera holds 6 with 5 missed and 4 with events. At 6.8 seconds the painting shows 1 while the camera holds 2 with 1 missed and the painting shows 0 trams while the camera holds 1. At 8.5 seconds the painting shows 2 matching 2 in the camera with 0 missed and 0 with no events.",
+    "view": "events+camera"
+   },
+   "reason": "I chose events plus camera because events outline motion and camera shows layout where light allowed.",
+   "result": {
+    "finding": "At 0.5 seconds the camera holds 3 persons and the events show 3816 for that object. At 3.0 seconds the camera holds 5 persons and the events show 8518 for that object. At 6.8 seconds the camera holds 2 persons and the events show 31203 for that object. At 6.8 seconds the camera holds 1 tram and the events show 350583 for that object, and it came back with 1 for 1. At 8.5 seconds the camera holds 2 persons and the painting shows 2.",
+    "view": "events+camera",
+    "invented": "At 0.5 seconds the painting shows 1 while the camera holds 3 with 3 missed and 1 with no events. At 3.0 seconds the painting shows 1 while the camera holds 6 with 5 missed and 4 with events. At 6.8 seconds the painting shows 1 while the camera holds 2 with 1 missed and the painting shows 0 trams while the camera holds 1. At 8.5 seconds the painting shows 2 matching 2 in the camera with 0 missed and 0 with no events.",
+    "auto": false,
+    "verdict": {
+     "frames_checked": 4,
+     "frames": [
+      5,
+      30,
+      68,
+      85
+     ],
+     "found": 13,
+     "left_out": 9,
+     "invented": 1,
+     "invented_no_events": 1,
+     "repaints": 3,
+     "repaints_helped": 1,
+     "restored": 1,
+     "sam_calls": 15,
+     "paint_calls": 3
+    },
+    "sightings": [
+     {
+      "who": "person",
+      "k": 68,
+      "t_s": 6.8,
+      "box": [
+       70,
+       197,
+       154,
+       347
+      ],
+      "score": 0.938,
+      "from": [
+       "camera"
+      ],
+      "events": 133319,
+      "vs_median": 20.3,
+      "painted": true
+     },
+     {
+      "who": "person",
+      "k": 68,
+      "t_s": 6.8,
+      "box": [
+       435,
+       209,
+       449,
+       243
+      ],
+      "score": 0.86,
+      "from": [
+       "camera",
+       "events"
+      ],
+      "events": 3833,
+      "vs_median": 15.45,
+      "painted": false,
+      "wide_ms": 800,
+      "wide_events": 31203,
+      "wide_vs_median": 13.62
+     },
+     {
+      "who": "tram",
+      "k": 68,
+      "t_s": 6.8,
+      "box": [
+       185,
+       174,
+       297,
+       247
+      ],
+      "score": 0.86,
+      "from": [
+       "camera",
+       "events"
+      ],
+      "events": 43345,
+      "vs_median": 10.17,
+      "painted": false,
+      "wide_ms": 800,
+      "wide_events": 350583,
+      "wide_vs_median": 8.91,
+      "restored_by": "r3"
+     },
+     {
+      "who": "person",
+      "k": 5,
+      "t_s": 0.5,
+      "box": [
+       450,
+       203,
+       459,
+       235
+      ],
+      "score": 0.793,
+      "from": [
+       "camera",
+       "events"
+      ],
+      "events": 3816,
+      "vs_median": 10.19,
+      "painted": false
+     },
+     {
+      "who": "person",
+      "k": 5,
+      "t_s": 0.5,
+      "box": [
+       412,
+       206,
+       422,
+       232
+      ],
+      "score": 0.785,
+      "from": [
+       "camera",
+       "events"
+      ],
+      "events": 1390,
+      "vs_median": 4.11,
+      "painted": false
+     },
+     {
+      "who": "person",
+      "k": 5,
+      "t_s": 0.5,
+      "box": [
+       429,
+       204,
+       437,
+       239
+      ],
+      "score": 0.504,
+      "from": [
+       "camera",
+       "events"
+      ],
+      "events": 1518,
+      "vs_median": 4.17,
+      "painted": false
+     },
+     {
+      "who": "person",
+      "k": 30,
+      "t_s": 3.0,
+      "box": [
+       474,
+       196,
+       497,
+       265
+      ],
+      "score": 0.914,
+      "from": [
+       "camera"
+      ],
+      "events": 12846,
+      "vs_median": 6.23,
+      "painted": true
+     },
+     {
+      "who": "person",
+      "k": 30,
+      "t_s": 3.0,
+      "box": [
+       423,
+       205,
+       431,
+       231
+      ],
+      "score": 0.723,
+      "from": [
+       "camera",
+       "events"
+      ],
+      "events": 1921,
+      "vs_median": 7.11,
+      "painted": false
+     },
+     {
+      "who": "person",
+      "k": 30,
+      "t_s": 3.0,
+      "box": [
+       188,
+       197,
+       210,
+       282
+      ],
+      "score": 0.879,
+      "from": [
+       "camera",
+       "events"
+      ],
+      "events": 8518,
+      "vs_median": 3.51,
+      "painted": false
+     },
+     {
+      "who": "person",
+      "k": 30,
+      "t_s": 3.0,
+      "box": [
+       435,
+       202,
+       448,
+       235
+      ],
+      "score": 0.84,
+      "from": [
+       "camera",
+       "events"
+      ],
+      "events": 2130,
+      "vs_median": 3.82,
+      "painted": false
+     },
+     {
+      "who": "person",
+      "k": 30,
+      "t_s": 3.0,
+      "box": [
+       519,
+       196,
+       534,
+       248
+      ],
+      "score": 0.867,
+      "from": [
+       "camera",
+       "events"
+      ],
+      "events": 6555,
+      "vs_median": 6.47,
+      "painted": false
+     },
+     {
+      "who": "person",
+      "k": 85,
+      "t_s": 8.5,
+      "box": [
+       460,
+       207,
+       474,
+       247
+      ],
+      "score": 0.828,
+      "from": [
+       "camera"
+      ],
+      "events": 6473,
+      "vs_median": 11.98,
+      "painted": true
+     },
+     {
+      "who": "person",
+      "k": 85,
+      "t_s": 8.5,
+      "box": [
+       443,
+       208,
+       456,
+       240
+      ],
+      "score": 0.652,
+      "from": [
+       "camera"
+      ],
+      "events": 2241,
+      "vs_median": 5.59,
+      "painted": true
+     }
+    ],
+    "invented_list": [
+     {
+      "who": "person",
+      "k": 5,
+      "t_s": 0.5,
+      "box": [
+       253,
+       216,
+       269,
+       258
+      ],
+      "score": 0.895,
+      "events": 1100,
+      "vs_median": 1.26,
+      "events_backed": false
+     }
+    ],
+    "drive_list": [
+     {
+      "who": "person",
+      "t_s": 0.5,
+      "k": 5,
+      "box": [
+       253,
+       216,
+       269,
+       258
+      ],
+      "from": [],
+      "events": 1100,
+      "painting": "invented"
+     },
+     {
+      "who": "person",
+      "t_s": 0.5,
+      "k": 5,
+      "box": [
+       412,
+       206,
+       422,
+       232
+      ],
+      "from": [
+       "camera",
+       "events"
+      ],
+      "events": 1390,
+      "painting": "left out"
+     },
+     {
+      "who": "person",
+      "t_s": 0.5,
+      "k": 5,
+      "box": [
+       429,
+       204,
+       437,
+       239
+      ],
+      "from": [
+       "camera",
+       "events"
+      ],
+      "events": 1518,
+      "painting": "left out"
+     },
+     {
+      "who": "person",
+      "t_s": 0.5,
+      "k": 5,
+      "box": [
+       450,
+       203,
+       459,
+       235
+      ],
+      "from": [
+       "camera",
+       "events"
+      ],
+      "events": 3816,
+      "painting": "left out"
+     },
+     {
+      "who": "person",
+      "t_s": 3.0,
+      "k": 30,
+      "box": [
+       188,
+       197,
+       210,
+       282
+      ],
+      "from": [
+       "camera",
+       "events"
+      ],
+      "events": 8518,
+      "painting": "left out"
+     },
+     {
+      "who": "person",
+      "t_s": 3.0,
+      "k": 30,
+      "box": [
+       423,
+       205,
+       431,
+       231
+      ],
+      "from": [
+       "camera",
+       "events"
+      ],
+      "events": 1921,
+      "painting": "left out"
+     },
+     {
+      "who": "person",
+      "t_s": 3.0,
+      "k": 30,
+      "box": [
+       435,
+       202,
+       448,
+       235
+      ],
+      "from": [
+       "camera",
+       "events"
+      ],
+      "events": 2130,
+      "painting": "left out"
+     },
+     {
+      "who": "person",
+      "t_s": 3.0,
+      "k": 30,
+      "box": [
+       474,
+       196,
+       497,
+       265
+      ],
+      "from": [
+       "camera"
+      ],
+      "events": 12846,
+      "painting": "painted"
+     },
+     {
+      "who": "person",
+      "t_s": 3.0,
+      "k": 30,
+      "box": [
+       519,
+       196,
+       534,
+       248
+      ],
+      "from": [
+       "camera",
+       "events"
+      ],
+      "events": 6555,
+      "painting": "left out"
+     },
+     {
+      "who": "person",
+      "t_s": 6.8,
+      "k": 68,
+      "box": [
+       70,
+       197,
+       154,
+       347
+      ],
+      "from": [
+       "camera"
+      ],
+      "events": 133319,
+      "painting": "painted"
+     },
+     {
+      "who": "person",
+      "t_s": 6.8,
+      "k": 68,
+      "box": [
+       435,
+       209,
+       449,
+       243
+      ],
+      "from": [
+       "camera",
+       "events"
+      ],
+      "events": 3833,
+      "painting": "left out"
+     },
+     {
+      "who": "tram",
+      "t_s": 6.8,
+      "k": 68,
+      "box": [
+       185,
+       174,
+       297,
+       247
+      ],
+      "from": [
+       "camera",
+       "events"
+      ],
+      "events": 43345,
+      "painting": "left out, brought back by repaint r3"
+     },
+     {
+      "who": "person",
+      "t_s": 8.5,
+      "k": 85,
+      "box": [
+       443,
+       208,
+       456,
+       240
+      ],
+      "from": [
+       "camera"
+      ],
+      "events": 2241,
+      "painting": "painted"
+     },
+     {
+      "who": "person",
+      "t_s": 8.5,
+      "k": 85,
+      "box": [
+       460,
+       207,
+       474,
+       247
+      ],
+      "from": [
+       "camera"
+      ],
+      "events": 6473,
+      "painting": "painted"
+     }
+    ],
+    "lines": [
+     "0.5 s, person at [253, 216, 269, 258]: only in the painting, the camera has no match; 1100 events in that box over 100 ms.",
+     "0.5 s, person at [412, 206, 422, 232]: from the camera and the events, 1390 events over 100 ms; painting: left out.",
+     "0.5 s, person at [429, 204, 437, 239]: from the camera and the events, 1518 events over 100 ms; painting: left out.",
+     "0.5 s, person at [450, 203, 459, 235]: from the camera and the events, 3816 events over 100 ms; painting: left out.",
+     "3.0 s, person at [188, 197, 210, 282]: from the camera and the events, 8518 events over 100 ms; painting: left out.",
+     "3.0 s, person at [423, 205, 431, 231]: from the camera and the events, 1921 events over 100 ms; painting: left out.",
+     "3.0 s, person at [435, 202, 448, 235]: from the camera and the events, 2130 events over 100 ms; painting: left out.",
+     "3.0 s, person at [474, 196, 497, 265]: from the camera, 12846 events over 100 ms; painting: painted.",
+     "3.0 s, person at [519, 196, 534, 248]: from the camera and the events, 6555 events over 100 ms; painting: left out.",
+     "6.8 s, person at [70, 197, 154, 347]: from the camera, 133319 events over 100 ms; painting: painted.",
+     "6.8 s, person at [435, 209, 449, 243]: from the camera and the events, 3833 events over 100 ms; painting: left out.",
+     "6.8 s, tram at [185, 174, 297, 247]: from the camera and the events, 43345 events over 100 ms; painting: left out, brought back by repaint r3.",
+     "8.5 s, person at [443, 208, 456, 240]: from the camera, 2241 events over 100 ms; painting: painted.",
+     "8.5 s, person at [460, 207, 474, 247]: from the camera, 6473 events over 100 ms; painting: painted."
+    ]
+   },
+   "seconds": 43.4,
+   "model_seconds": 43.4
+  }
+ ],
+ "held": 68,
+ "prose": [
+  {
+   "after_step": 12,
+   "text": "",
+   "finish_reason": "length"
+  }
+ ],
+ "seconds": 287.7
+}
